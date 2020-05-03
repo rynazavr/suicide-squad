@@ -16,6 +16,7 @@
     @include font($main-font, 13px, 700, $main-text-color, 1.5);
     text-align: left;
     margin-bottom: 12px;
+    display: block;
 
     &:last-of-type {
       margin-bottom: 0px;
@@ -28,24 +29,16 @@
       width: 25px;
       height: 2px;
       background-color: $decore-color;
+      margin-right: 5px;
     }
   }
 
   .item-decor::before {
-    counter-increment: count-list;
-    content: '' counter(count-list, decimal-leading-zero);
-    display: block;
+    counter-increment: counter-list;
+    content: '' counter(counter-list, decimal-leading-zero);
     text-align: left;
     color: $decore-color;
   }
-
-  /*&__item::before {
-    background-color: $decore-color;
-    display: block;
-    width: 25px;
-    height: 2px;
-    content: '';
-  }*/
 
   &__wrapper {
     display: block;
@@ -62,13 +55,17 @@
     background-color: $bg-color;
     padding: 22px;
     box-shadow: 0px 0px 26px 8px rgba(29, 29, 27, 0.11);
-    counter-reset: count-list;
+    counter-reset: counter-list;
   }
 }
 
 .block {
   display: block;
 }
+
+.main-problems__parag {
+  margin-top: 16px;
+} 
 
 /*@media (max-width: 767px) {
   .main-problems__item:not(:last-child) {
