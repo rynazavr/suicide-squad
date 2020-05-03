@@ -1,0 +1,31 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 250px;
+  height: 48px;
+  border: 2px solid $decore-color;
+}
+
+.btn-tel {
+  @include font($secondary-font, 11px, 700, $decore-text-color);
+  background-color: transparent;
+}
+
+.btn-tel:hover {
+  @include font($secondary-font, 11px, 700, $secondary-text-color);
+  background-color: $decore-color;
+}
+
+.btn-main {
+  @include font($secondary-font, 11px, 700, $secondary-text-color);
+  background-color: $decore-color;
+}
+
+.btn-main:hover {
+  @include font($secondary-font, 11px, 700, $decore-text-color);
+  background-color: transparent;
+}
