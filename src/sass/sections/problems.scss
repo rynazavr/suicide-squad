@@ -1,0 +1,82 @@
+.main-problems {
+  background-color: $bg-second-color;
+
+  &__heading {
+    @include font($main-font, 20px, 700, $reverse-text-color, 1.5);
+    text-align: left;
+    width: 260px;
+    padding: 48px 0px 0px 20px;
+
+    &--span {
+      color: $decore-text-color;
+    }
+  }
+
+  &__item {
+    @include font($main-font, 13px, 700, $main-text-color, 1.5);
+    text-align: left;
+    margin-bottom: 12px;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+
+    &::before {
+    content: "";
+     display: inline-block;
+     vertical-align: middle;
+     width: 25px;
+     height: 2px;
+    background-color: $decore-color;
+  }
+  }
+
+  .item-decor::before {
+      counter-increment: count-list;
+      content: ' ' counter(count-list, decimal-leading-zero);
+      display: block;
+      text-align: left;
+      color: $decore-color;}
+
+  /*&__item::before {
+    background-color: $decore-color;
+    display: block;
+    width: 25px;
+    height: 2px;
+    content: '';
+  }*/
+
+  &__wrapper {
+    display: block;
+    position: relative;
+    min-height: 488px;
+  }
+
+  &__float-section {
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 86%;
+    background-color: $bg-color;
+    padding: 22px;
+    box-shadow: 0px 0px 26px 8px rgba(29, 29, 27, 0.11);
+    counter-reset: count-list;
+  }
+}
+
+.block {
+  display: block;
+}
+
+/*@media (max-width: 767px) {
+  .main-problems__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 939px) {
+  .main-problems__item:not(:nth-last-child(even)) {
+    margin-bottom: 20px;
+  }
+}*/
