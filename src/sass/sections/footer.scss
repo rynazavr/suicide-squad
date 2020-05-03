@@ -1,0 +1,46 @@
+.footer-size {
+  padding: 0 20px 0;
+}
+.hell-en {
+  text-align: center;
+  padding: 27px 0 0;
+}
+.hell-tel {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 19px;
+}
+.hell-svg {
+  width: 20px;
+  height: 20px;
+  fill: $decore-color;
+  margin-right: 8px;
+}
+.hell-number {
+  font-size: 18px;
+  font-family: $main-font;
+  color: $bg-second-color;
+  font-weight: 700;
+}
+.instagram-link {
+  width: 37px;
+  height: 37px;
+  margin: 0 auto;
+  background-image: url('../images/icon_insta.svg');
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  height: 72px;
+  background-color: $bg-second-color;
+}
+.rights-reserved {
+  font-size: 11px;
+  font-family: $main-font;
+  font-weight: 500;
+  color: #fdfefe6b;
+  text-align: center;
+  line-height: 72px;
+}
