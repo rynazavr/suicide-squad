@@ -1,6 +1,9 @@
 .testimonials {
   padding: 48px 0 54px;
 }
+.testimonials-size {
+  padding: 0 20px 0;
+}
 .testimonial-title {
   font-size: 20px;
   font-weight: 800;
@@ -14,6 +17,9 @@
 
 // testimonials-content__list
 
+.testimonials-content__list {
+  margin-bottom: 16px;
+}
 .content__list-item {
   padding: 22px 0 30px;
   box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
@@ -21,12 +27,18 @@
 .content-limitation {
   width: 80px;
   height: 80px;
-  margin: 0 auto;
+  margin: 0 auto 18px;
 }
 .content-limitation img {
   border-radius: 50px;
-  width: 80px;
-  height: 80px;
+}
+.social-link-vk {
+  width: 25px;
+  height: 14px;
+  background-image: url(../images/vk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 16px;
 }
 .content-name {
   font-size: 13px;
@@ -55,4 +67,73 @@
   color: $main-text-color;
   letter-spacing: 0.55px;
   text-align: center;
+  padding: 0 20px 0;
+}
+.read-more {
+  display: inline;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: $main-font;
+  line-height: 20px;
+  color: $decore-text-color;
+  letter-spacing: 0.55px;
+  text-decoration: underline;
+}
+
+//testimonials__list
+
+.testimonials__list {
+  display: flex;
+  width: 185px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.testimonials__item:not(:last-child) {
+  margin-right: 11px;
+}
+.review-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-position: center;
+  outline: none;
+}
+.icon--1 {
+  background-image: url(../images/1.png);
+}
+.icon--2 {
+  background-image: url(../images/2.png);
+}
+.icon--3 {
+  background-image: url(../images/3.png);
+}
+.icon--4 {
+  background-image: url(../images/4.png);
+}
+.icon--5 {
+  background-image: url(../images/5.png);
+}
+.icon--6 {
+  background-image: url(../images/6.png);
+}
+.icon--7 {
+  background-image: url(../images/7.png);
+}
+
+// testimonials-button
+
+.testimonials-button {
+  display: flex;
+  justify-content: space-between;
+}
+.button-prew {
+  width: 20px;
+  height: 11px;
+  background-image: url(./images/arrows.svg#icon-prev);
+}
+.button-next {
+  width: 20px;
+  height: 11px;
+  background-image: url(./images/arrows.svg#icon-next);
 }
