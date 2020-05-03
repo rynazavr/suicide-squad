@@ -124,10 +124,11 @@
 // testimonials-button
 
 .testimonials-button__list {
-  position: absolute;
+  display: flex;
+  justify-content: space-between;
 }
 .testimonials-button {
   width: 20px;
   height: 11px;
-  color: $decore-color;
+  background-color: red;
 }

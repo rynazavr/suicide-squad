@@ -1,0 +1,74 @@
+.contacts {
+  background-image: url('../images/contacts.jpg');
+  padding: 54px 0 58px;
+}
+.contacts-title {
+  font-size: 14px;
+  font-weight: 800;
+  font-family: $main-font;
+  line-height: 26px;
+  color: $reverse-text-color;
+  letter-spacing: 0.7px;
+  text-align: center;
+  padding: 0 20px 0;
+  margin-bottom: 20px;
+}
+.contacts-span,
+.request-span {
+  color: $decore-text-color;
+}
+.request {
+  font-size: 11px;
+  font-weight: 800;
+  font-family: $main-font;
+  line-height: 20px;
+  color: $reverse-text-color;
+  letter-spacing: 0.7px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+// form
+
+.request-form {
+  padding: 0 20px 0;
+}
+.request-information {
+  margin-bottom: 55px;
+}
+.request-input {
+  width: 280px;
+  height: 50px;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: $bg-color;
+  border-style: solid;
+}
+.request-input:nth-child(1) {
+  margin-bottom: 20px;
+}
+::placeholder {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 38px;
+  font-family: $main-font;
+  letter-spacing: 0.65px;
+  color: $bg-color;
+  padding-left: 22px;
+}
+.contact-form-button {
+  display: block;
+  margin: 0 auto;
+  width: 248px;
+  height: 48px;
+  background-color: $decore-color;
+  border-width: 2px;
+  border-color: $decore-color;
+  border-style: solid;
+  font-size: 11px;
+  font-family: $secondary-font;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
