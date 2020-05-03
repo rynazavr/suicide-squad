@@ -123,17 +123,11 @@
 
 // testimonials-button
 
+.testimonials-button__list {
+  position: absolute;
+}
 .testimonials-button {
-  display: flex;
-  justify-content: space-between;
-}
-.button-prew {
   width: 20px;
   height: 11px;
-  background-image: url(./images/arrows.svg#icon-prev);
-}
-.button-next {
-  width: 20px;
-  height: 11px;
-  background-image: url(./images/arrows.svg#icon-next);
+  color: $decore-color;
 }
