@@ -22,21 +22,22 @@
     }
 
     &::before {
-    content: "";
-     display: inline-block;
-     vertical-align: middle;
-     width: 25px;
-     height: 2px;
-    background-color: $decore-color;
-  }
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 25px;
+      height: 2px;
+      background-color: $decore-color;
+    }
   }
 
   .item-decor::before {
-      counter-increment: count-list;
-      content: ' ' counter(count-list, decimal-leading-zero);
-      display: block;
-      text-align: left;
-      color: $decore-color;}
+    counter-increment: count-list;
+    content: '' counter(count-list, decimal-leading-zero);
+    display: block;
+    text-align: left;
+    color: $decore-color;
+  }
 
   /*&__item::before {
     background-color: $decore-color;
