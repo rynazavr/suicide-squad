@@ -1,0 +1,170 @@
+.header {
+    &__top{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+  
+    }
+    
+    &__logo {
+      display: flex;
+      width: 17npm stop0px;
+      height: 49px;
+     
+    
+      &--name {
+        display: block;
+        font-size: 25px;
+        font-family: $main-font;
+        color: #000000;
+        font-weight: bold;
+      }
+      &--txt {
+        display: block;
+        font-size: 8.75px;
+        font-family: $main-font;
+        color: $desc-text-color;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+    
+    &__hamb {
+      &:hover .header__nav--overley--sm{
+        opacity: 1;
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+  
+  
+    &__svg {
+      fill: $decore-color;
+      &--fire {
+      }
+  
+      &--hamb {
+      }
+  
+      &--student {
+        
+      }
+  
+      &--mobile {
+      
+      }
+  
+      &--insurance {
+    
+      }
+      &--info {
+        fill: $decore-color;  
+      }
+    }
+  
+    &__nav {
+      &--info {
+        font-size: 12px;
+        font-family: $secondary-font;
+        color: $desc-text-color;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+  
+      &--overley--sm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+         width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+      
+  
+      &--overley--md {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+         width: 100%;
+        height: 100%;
+        opacity: 0;
+  
+      }
+    }
+  
+    &__title {
+      
+      margin-bottom: 40px;
+      &--name {
+        font-size: 20px;
+        font-family: $main-font;
+        color: $main-text-color;
+        font-weight: bold;
+        line-height: 1.208;
+        padding-bottom: 40px;
+      }
+  
+      &__txt {
+        font-size: 18px;
+        font-family: $main-font;
+        line-height: 1.463;
+       
+  
+        &--grey {
+          color: $desc-text-color;
+        }
+  
+        &--black {
+          display: block;
+          color: $main-text-color;
+       
+        }
+  
+        &--orange {
+          color: $decore-text-color;
+          
+         
+        }
+      }
+    }
+  
+    &__img {
+      padding-bottom: 90px;
+  
+    }
+  
+    &__info {
+      display: flex;
+      flex-direction: column;
+      &--block {
+        display: flex;
+        width: 200px;
+        height: 60px;
+        font-size: 13px;
+        font-family: $main-font;
+        color: $main-text-color;
+        font-weight: bold;
+        line-height: 1.556;
+        text-align: left;
+        margin-bottom: 25px;
+       
+      }
+    }
+    }
+  
+    .btn-main {
+      margin-bottom: 25px;
+    }
+  
+    .container {
+      width: 280px;
+      margin: 0 auto;
+    }
+  
+    .img__block {
+      padding-top: 10px;
+    }
+  
