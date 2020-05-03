@@ -89,3 +89,56 @@
     }
   }
 }
+
+.whywe {
+  margin: 0 20px;
+  padding: 2px 0 23px;
+  // background-color: ($bg-second-color 66%, $bg-color 100%);
+
+  &-title {
+    @include font($main-font, 20px, 800, $reverse-text-color, 30px);
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    padding-right: 20px;
+  }
+
+  &__list {
+    counter-reset: count-list;
+    background-color: $bg-color;
+    box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+    padding: 13px 28px 20px;
+  }
+
+  &__item {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 25px;
+      height: 2px;
+      vertical-align: middle;
+      background-color: $decore-color;
+      margin-right: 7px;
+    }
+
+    &-desc {
+      @include font($main-font, 13px, 700, $main-text-color, 20px);
+      letter-spacing: 0.65px;
+    }
+
+    &-counter::before {
+      counter-increment: count-list;
+      content: counter(count-list, decimal-leading-zero);
+      display: inline-block;
+      @include font($main-font, 14px, 500, $decore-text-color, 29px);
+      margin-bottom: 2px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &:nth-child(3) {
+      padding-right: 10px;
+    }
+  }
+}
