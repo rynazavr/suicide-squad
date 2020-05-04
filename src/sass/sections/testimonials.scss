@@ -64,7 +64,6 @@
   color: $main-text-color;
   letter-spacing: 0.55px;
   text-align: center;
-  padding: 0 20px 0;
 }
 .read-more {
   display: inline;
@@ -132,7 +131,29 @@
   top: 50%;
   transform: translateY(-50%);
 }
-// .testimonials-button {
-//   width: 20px;
-//   height: 11px;
-// }
+
+@media (min-width: 768px) {
+  .testimonial-title {
+    font-size: 26px;
+  }
+
+  .content__list-item {
+    display: flex;
+  }
+  .review-face {
+    padding: 0 44px 0 36px;
+  }
+  .content-name {
+    font-size: 18px;
+  }
+  .first-information {
+    font-size: 13px;
+    text-align: left;
+  }
+  .review {
+    text-align: left;
+  }
+  .review-information {
+    padding-right: 60px;
+  }
+}
