@@ -1,18 +1,18 @@
 .program {
   background-image: url('../images/pic1.png'), linear-gradient($bg-second-color 0% 90.5%, $bg-color 90.5% 100%);
   background-repeat: no-repeat;
-  background-position: 100% 78%;
+  background-position: 100% 74%;
 
 
   &-wrapper {
-    padding: 50px 0 42px;
+    padding: 43px 0 35px;
   }
 
   &-title {
     @include font($main-font, 20px, 800, $reverse-text-color, 33px);
     letter-spacing: 1px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 
   &__item {
@@ -33,14 +33,14 @@
     }
 
     &:not(:last-child) {
-      padding-bottom: 38px;
+      padding-bottom: 32px;
     }
 
     &-title {
       @include font($main-font, 15px, 700, $reverse-text-color, 29px);
       letter-spacing: 1.65px;
       text-transform: uppercase;
-      margin: 0 auto 16px;
+      margin: 0 auto 9px;
 
       &::before {
         position: absolute;
@@ -58,13 +58,13 @@
 
   &__course-materials {
     &:not(:last-child) {
-      margin-bottom: 12px;
+      margin-bottom: 7px;
     }
 
     &-title {
       @include font($main-font, 13px, 500, $decore-text-color, 29px);
       letter-spacing: 0.65px;
-      margin-bottom: 15px;
+      margin-bottom: 7px;
 
       &::before {
         display: inline-block;
@@ -82,7 +82,7 @@
       letter-spacing: 0.55px;
 
       &:not(:last-child) {
-        margin-bottom: 6px;
+        margin-bottom: 0px;
       }
     }
   }
