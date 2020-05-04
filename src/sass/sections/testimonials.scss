@@ -143,6 +143,10 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.testimonials-button {
+  border: none;
+  background-color: transparent;
+}
 
 @media (min-width: 768px) {
   .testimonial-title {
@@ -157,7 +161,7 @@
     padding: 42px 0 46px;
   }
   .review-face {
-    padding: 20px 44px 0 36px;
+    padding: 30px 44px 0 36px;
   }
   .content-name {
     font-size: 18px;
