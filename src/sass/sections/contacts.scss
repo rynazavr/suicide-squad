@@ -4,6 +4,11 @@
   background-position: center;
   padding: 52px 0;
 }
+@media (max-width: 767px) {
+  .contacts-title {
+    padding: 0 20px 0;
+  }
+}
 .contacts-title {
   font-size: 14px;
   font-weight: 800;
@@ -12,7 +17,6 @@
   color: $reverse-text-color;
   letter-spacing: 0.7px;
   text-align: center;
-  padding: 0 20px 0;
   margin-bottom: 20px;
 }
 .contacts-span,
@@ -21,7 +25,7 @@
 }
 .request {
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 600;
   font-family: $main-font;
   line-height: 20px;
   color: $reverse-text-color;
@@ -60,6 +64,7 @@
   margin: 0 auto;
   width: 248px;
   height: 48px;
+  letter-spacing: 1.46px;
   background-color: $decore-color;
   border-width: 2px;
   border-color: $decore-color;
@@ -70,4 +75,26 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    background-image: url('../images/contacts-md.jpg');
+  }
+  .contacts-title {
+    font-size: 22px;
+    line-height: 38px;
+    padding: 0 70px;
+  }
+  .request {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 0 100px;
+  }
+  .request-input {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+  }
 }
