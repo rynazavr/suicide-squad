@@ -106,6 +106,36 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .main-problems {
+    background-image: url('../images/fire_tablet.png'),
+      linear-gradient(
+        to bottom,
+        $bg-second-color 26%,
+        $bg-second-color 74%,
+        $bg-color 74%
+      );
+    background-repeat: no-repeat;
+    background-position: 100% 40%;
+  }
+
+  .main-problems__float-section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: top center;
+    justify-content: space-around;
+    min-width: 1210px;
+    padding-top: 50px;
+    padding-bottom: 14px;
+  }
+
+  .main-problems__item {
+    text-align: left;
+    margin-bottom: 36px;
+    width: 310px;
+  }
+}
+
 /*@media (max-width: 767px) {
   .main-problems__item:not(:last-child) {
     margin-bottom: 20px;
@@ -117,4 +147,5 @@
     margin-bottom: 20px;
   }
 }
+
 */
