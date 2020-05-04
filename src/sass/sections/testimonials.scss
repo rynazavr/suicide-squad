@@ -75,9 +75,10 @@
   letter-spacing: 0.55px;
   text-decoration: underline;
 }
-
-.review-content {
-  position: relative;
+@media (max-width: 767px) {
+  .review-content {
+    position: relative;
+  }
 }
 
 //testimonials__list
@@ -136,6 +137,9 @@
   .testimonial-title {
     font-size: 26px;
   }
+  .testimonials-slider {
+    position: relative;
+  }
 
   .content__list-item {
     display: flex;
@@ -155,5 +159,12 @@
   }
   .review-information {
     padding-right: 60px;
+  }
+  .testimonials__list {
+    overflow: visible;
+    justify-content: center;
+  }
+  .testimonials-button__list {
+    width: 686px;
   }
 }
