@@ -33,7 +33,6 @@
 }
 
 .copyright {
-  height: 72px;
   background-color: $bg-second-color;
 }
 .rights-reserved {
@@ -43,4 +42,16 @@
   color: #fdfefe6b;
   text-align: center;
   line-height: 72px;
+}
+
+@media (min-width: 768px) {
+  .hell-en {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .rights-reserved {
+    text-align: left;
+    padding-left: 40px;
+  }
 }
