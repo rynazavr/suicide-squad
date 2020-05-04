@@ -80,6 +80,10 @@
   text-decoration: underline;
 }
 
+.review-content {
+  position: relative;
+}
+
 //testimonials__list
 
 .testimonials__list {
@@ -126,8 +130,12 @@
 .testimonials-button__list {
   display: flex;
   justify-content: space-between;
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.testimonials-button {
-  width: 20px;
-  height: 11px;
-}
+// .testimonials-button {
+//   width: 20px;
+//   height: 11px;
+// }
