@@ -107,8 +107,8 @@
   }
 }
 
-@media (max-width: 939px) {
-  .prog-list__item:not(:nth-last-child(even)) {
+@media (max-width: 1279px) {
+  .prog-list__item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 20px;
   }
 }
