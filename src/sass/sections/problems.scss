@@ -1,10 +1,9 @@
 .main-problems {
-  background-color: $bg-second-color;
+  background: linear-gradient(to bottom, $bg-second-color 26%, $bg-second-color 74%, $bg-color 74%,);
 
   &__heading {
     @include font($main-font, 20px, 700, $reverse-text-color, 1.5);
     text-align: left;
-    width: 260px;
     padding: 48px 0px 0px 20px;
 
     &--span {
@@ -40,22 +39,20 @@
     color: $decore-color;
   }
 
-  &__wrapper {
-    display: block;
-    position: relative;
-    min-height: 488px;
+  &__head {
+    margin-bottom: 20px;
   }
 
   &__float-section {
-    position: absolute;
-    top: 210px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 86%;
+    min-width: 280px;
     background-color: $bg-color;
-    padding: 22px;
+    padding: 22px 28px 30px 30px;
     box-shadow: 0px 0px 26px 8px rgba(29, 29, 27, 0.11);
     counter-reset: counter-list;
+  }
+
+  &__wrapper {
+    padding-bottom: 46px;
   }
 }
 
