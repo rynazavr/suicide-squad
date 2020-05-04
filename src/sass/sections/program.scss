@@ -1,5 +1,5 @@
 .program {
-  background-image: url('../images/pic1.png'), linear-gradient($bg-second-color 0% 90.5%, $bg-color 90.5% 100%);
+  background-image: url('../images/s3-pic-sm.png'), linear-gradient($bg-second-color 0% 90.5%, $bg-color 90.5% 100%);
   background-repeat: no-repeat;
   background-position: 100% 74%;
 
@@ -22,12 +22,10 @@
     &:not(:last-child) {
       &::before {
         content: '';
-        display: inline-block;
+        @include space(2px, 100%, inline-block);
         position: absolute;
         top: 15px;
         left: 63px;
-        width: 2px;
-        height: 100%;
         background-color: #546264;
       }
     }
@@ -43,13 +41,11 @@
       margin: 0 auto 9px;
 
       &::before {
+        content: '';
+        @include space(10px, 10px, inline-block);
         position: absolute;
         top: 10px;
         left: 59px;
-        display: inline-block;
-        content: '';
-        width: 10px;
-        height: 10px;
         border-radius: 50%;
         background-color: $decore-color;
       }
@@ -57,8 +53,12 @@
   }
 
   &__course-materials {
-    &:not(:last-child) {
-      margin-bottom: 7px;
+    // &:not(:last-child) {
+    //   margin-bottom: 7px;
+    // }
+
+    p:first-of-type {
+      padding-right: 40px;
     }
 
     &-title {
@@ -67,10 +67,8 @@
       margin-bottom: 7px;
 
       &::before {
-        display: inline-block;
         content: '';
-        width: 25px;
-        height: 2px;
+        @include space(25px, 2px, inline-block);
         vertical-align: super;
         background-color: $decore-color;
         margin-right: 14px;
@@ -80,10 +78,6 @@
     &-desc {
       @include font($main-font, 11px, 400, $desc-text-color, 20px);
       letter-spacing: 0.55px;
-
-      &:not(:last-child) {
-        margin-bottom: 0px;
-      }
     }
   }
 }
@@ -93,22 +87,19 @@
     @include font($main-font, 20px, 800, $reverse-text-color, 30px);
     letter-spacing: 1px;
     margin-bottom: 18px;
-    padding-right: 20px;
   }
 
   &__list {
     counter-reset: count-list;
-    background-color: $bg-color;
     box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+    background-color: $bg-color;
     padding: 13px 28px 20px;
   }
 
   &__item {
     &::before {
-      content: "";
-      display: inline-block;
-      width: 25px;
-      height: 2px;
+      content: '';
+      @include space(25px, 2px, inline-block);
       vertical-align: middle;
       background-color: $decore-color;
       margin-right: 7px;
@@ -126,13 +117,106 @@
       @include font($main-font, 14px, 500, $decore-text-color, 29px);
       margin-bottom: 2px;
     }
+  }
+}
 
-    &:not(:last-child) {
-      margin-bottom: 8px;
+@media (max-width: 767px) {
+  .program {
+    &__course-materials:not(:last-child) {
+      margin-bottom: 7px;
+    }
+  }
+
+  .whywe {
+    &-title {
+      padding-right: 20px;
     }
 
-    &:nth-child(3) {
-      padding-right: 10px;
+    &__item {
+      &:nth-child(3) {
+        padding-right: 10px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
     }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {}
+
+@media (min-width: 1280px) and (max-width: 1599px) {}
+
+@media (min-width: 768px) {
+  .program {
+    background-image: url('../images/s3-pic-md.png'), linear-gradient($bg-second-color 0% 88.6%, $bg-color 88.6% 100%);
+    background-position: 100% 66%;
+
+    &-wrapper {
+      padding: 53px 0 150px;
+    }
+
+    &-title {
+      @include font($main-font, 26px, 800, $reverse-text-color, 63px);
+      letter-spacing: 1.3px;
+      text-align: left;
+      margin-bottom: 38px;
+    }
+
+    &__item {
+      padding-left: 144px;
+
+      &:not(:last-child)::before {
+        left: 91px;
+      }
+
+      &-title::before {
+        left: 87px;
+      }
+
+      &-course {
+        @include flex($jc: flex-start, $ai: stretch);
+      }
+    }
+
+    &__course-materials {
+      width: 180px;
+    }
+  }
+
+  .whywe {
+    &-title {
+      @include font($main-font, 26px, 800, $reverse-text-color, 62px);
+      letter-spacing: 1.3px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    &__list {
+      @include flex(space-between);
+      flex-wrap: wrap;
+      padding: 20px 90px 28px 108px;
+    }
+
+    &__item {
+      width: 218px;
+
+      &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1210px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1340px;
   }
 }
