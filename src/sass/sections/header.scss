@@ -195,6 +195,9 @@
 }
 
 @media (max-width: 767px) {
+  .container {
+    width: 280px;
+  }
     
   .header__nav--overley--sm{
     display: none;
