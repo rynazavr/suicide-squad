@@ -70,9 +70,11 @@
         border: 2px solid $decore-color;
         width: 60px;
         height: 60px;
-        padding: 5px 5px 5px 5px;
-        
+        padding: 5px 5px 5px 5px;  
        
+      }
+      &--fire{
+        fill: $decore-color;
       }
     }
 
@@ -181,47 +183,31 @@
   }
 
   .header__nav--overlay {
-  
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-    width: 200px;
-    height: 200px;
-    // opacity: 0;
-    // visibility: hidden;
+    position: relative;
   }
     
-
   .header__nav--overley--sm{
- 
+    display: none;
+    position: absolute;
   }
-
-  .header__nav--info {
-    color: white;
-    display: block;
-    padding: 20px;
-  }
-
-  .header__burger-menu:hover .header__nav--overlay{
-    visibility: visible;
-    opacity: 1;
-    }
-
-    .header__info {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .header__block {
-      margin-bottom: 80px;
-    }
+  
 
 }
 @media (min-width: 768px) {
   .container {
     width: 688px;
   }
+
+  .header__nav--overlay {
+    position: relative;
+  }
+    
+  .header__nav--overley--lg{
+    display: none;
+    position: absolute;
+  }
+  
+
   .header__block {
     display: flex;
     justify-content: space-between;
