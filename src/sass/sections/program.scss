@@ -1,19 +1,18 @@
 .program {
-  background-color: $bg-second-color;
-  background-image: url('../images/pic1.png');
+  background-image: url('../images/pic1.png'), linear-gradient($bg-second-color 0% 90.5%, $bg-color 90.5% 100%);
   background-repeat: no-repeat;
-  background-position: right bottom;
-  padding: 50px 0 132px;
+  background-position: 100% 78%;
+
+
+  &-wrapper {
+    padding: 50px 0 42px;
+  }
 
   &-title {
     @include font($main-font, 20px, 800, $reverse-text-color, 33px);
     letter-spacing: 1px;
     text-align: center;
     margin-bottom: 30px;
-  }
-
-  &__list {
-    margin: 0 20px;
   }
 
   &__item {
@@ -30,7 +29,6 @@
         width: 2px;
         height: 100%;
         background-color: #546264;
-        // background-image: linear-gradient( 33deg, rgb(88,82,115) 0%, rgb(172,95,62) 24%, rgb(255,107,8) 99%);
       }
     }
 
@@ -91,10 +89,6 @@
 }
 
 .whywe {
-  margin: 0 20px;
-  padding: 2px 0 23px;
-  // background-color: ($bg-second-color 66%, $bg-color 100%);
-
   &-title {
     @include font($main-font, 20px, 800, $reverse-text-color, 30px);
     letter-spacing: 1px;
