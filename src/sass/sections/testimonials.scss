@@ -90,6 +90,9 @@
   .content-name {
     text-align: center;
   }
+  .testimonials__item:not(:last-child) {
+    margin-right: 11px;
+  }
 }
 
 //testimonials__list
@@ -100,9 +103,7 @@
   margin: 0 auto;
   overflow: hidden;
 }
-.testimonials__item:not(:last-child) {
-  margin-right: 11px;
-}
+
 .review-icon {
   width: 54px;
   height: 54px;
@@ -179,6 +180,9 @@
   .testimonials__list {
     overflow: visible;
     justify-content: center;
+  }
+  .testimonials__item:not(:last-child) {
+    margin-right: 20px;
   }
   .testimonials-button__list {
     width: 688px;

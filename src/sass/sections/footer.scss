@@ -1,12 +1,10 @@
 .hell-en {
   text-align: center;
-  padding: 27px 0 0;
 }
 .hell-tel {
   display: flex;
   justify-content: center;
   align-content: baseline;
-  margin-bottom: 19px;
 }
 .hell-svg {
   width: 20px;
@@ -14,8 +12,20 @@
   fill: $decore-color;
   margin-right: 8px;
 }
-.hell-en img {
-  margin: 0 auto 14px;
+@media (max-width: 767px) {
+  .hell-en {
+    padding: 27px 0 14px;
+  }
+  .hell-tel {
+    margin-bottom: 19px;
+  }
+  .hell-en img {
+    margin: 0 auto;
+  }
+  .instagram-link {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 .hell-number {
   font-size: 18px;
@@ -26,10 +36,8 @@
 .instagram-link {
   width: 37px;
   height: 37px;
-  margin: 0 auto;
   background-image: url('../images/icon_insta.svg');
   background-position: center;
-  margin-bottom: 20px;
 }
 
 .copyright {
@@ -47,11 +55,23 @@
 @media (min-width: 768px) {
   .hell-en {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: row-reverse;
+    padding: 35px 0;
+  }
+  .hell-tel::after {
+    content: '';
+    width: 29px;
+    height: 1px;
+    background-color: rgb(224, 224, 224);
+    transform: rotate(90deg);
+  }
+  .footer-contact {
+    display: flex;
+    align-items: center;
   }
   .rights-reserved {
     text-align: left;
-    padding-left: 40px;
   }
 }

@@ -50,7 +50,7 @@
 .request-input:nth-child(1) {
   margin-bottom: 20px;
 }
-::placeholder {
+input::placeholder {
   font-size: 13px;
   font-weight: 600;
   line-height: 38px;
