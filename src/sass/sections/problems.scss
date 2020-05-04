@@ -16,6 +16,7 @@
     text-align: left;
     margin-bottom: 12px;
     display: block;
+    width: 236px;
 
     &:last-of-type {
       margin-bottom: 0px;
@@ -44,6 +45,8 @@
   }
 
   &__float-section {
+    display: flex;
+    flex-direction: column;
     min-width: 280px;
     background-color: $bg-color;
     padding: 22px 28px 30px 30px;
