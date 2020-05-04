@@ -31,7 +31,7 @@
     }
 
     &:not(:last-child) {
-      padding-bottom: 32px;
+      padding-bottom: 31px;
     }
 
     &-title {
@@ -53,10 +53,6 @@
   }
 
   &__course-materials {
-    // &:not(:last-child) {
-    //   margin-bottom: 7px;
-    // }
-
     p:first-of-type {
       padding-right: 40px;
     }
@@ -151,17 +147,17 @@
 @media (min-width: 768px) {
   .program {
     background-image: url('../images/s3-pic-md.png'), linear-gradient($bg-second-color 0% 88.6%, $bg-color 88.6% 100%);
-    background-position: 100% 66%;
+    background-position: 100% 65%;
 
     &-wrapper {
-      padding: 53px 0 150px;
+      padding: 45px 0 152px;
     }
 
     &-title {
       @include font($main-font, 26px, 800, $reverse-text-color, 63px);
       letter-spacing: 1.3px;
       text-align: left;
-      margin-bottom: 38px;
+      margin-bottom: 30px;
     }
 
     &__item {
@@ -190,20 +186,20 @@
       @include font($main-font, 26px, 800, $reverse-text-color, 62px);
       letter-spacing: 1.3px;
       text-align: center;
-      margin-bottom: 12px;
+      margin-bottom: 7px;
     }
 
     &__list {
       @include flex(space-between);
       flex-wrap: wrap;
-      padding: 20px 90px 28px 108px;
+      padding: 18px 90px 26px 108px;
     }
 
     &__item {
       width: 218px;
 
       &:not(:nth-last-child(-n+2)) {
-        margin-bottom: 14px;
+        margin-bottom: 16px;
       }
     }
   }
