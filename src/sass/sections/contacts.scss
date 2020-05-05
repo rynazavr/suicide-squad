@@ -102,3 +102,40 @@ input::placeholder {
     width: 400px;
   }
 }
+@media (min-width: 1280px) {
+  .contacts {
+    background-image: url('../images/contacts-lg.jpg');
+  }
+  .contacts-title {
+    font-size: 38px;
+    line-height: 50px;
+    padding: 0 140px;
+    margin-bottom: 50px;
+  }
+  .request {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 330px;
+    margin-bottom: 52px;
+  }
+  .request-information {
+    margin-bottom: 57px;
+  }
+  .request-input {
+    width: 620px;
+    height: 70px;
+  }
+  .request-input:nth-child(1) {
+    margin-bottom: 28px;
+  }
+  input::placeholder {
+    font-size: 21px;
+    line-height: 27px;
+  }
+  .contact-form-button {
+    width: 350px;
+    height: 70px;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+  }
+}
