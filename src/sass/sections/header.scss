@@ -254,25 +254,27 @@
   .header__desktop {
     display: flex;
     justify-content: space-between;
-    width: 75%;
+   
   }
 
   .header__nav {
-   
-  display: flex;
-  justify-content: space-between;
-    padding-right: 20px;
     padding-top: 20px;
+   display: flex;
+   justify-content: space-around;
+   
   }
 
   .header__nav--info {
-    display: inline-block;
-     padding-right: 20px;
-     
+    text-align: center;
+    width: 190px;
    }
 
-  .header_btn {
-    display: inline-block;
+   .nav--block {
+     width: 100px;
+   }
+
+  .header_btn--tell {
+    width: 300px;
   }
 
   .header__title--name {
