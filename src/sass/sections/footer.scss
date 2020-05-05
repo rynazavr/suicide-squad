@@ -65,10 +65,10 @@
   }
   .hell-tel::after {
     content: '';
-    width: 29px;
-    height: 1px;
+    width: 1px;
+    height: 29px;
     background-color: rgb(224, 224, 224);
-    transform: rotate(90deg);
+    padding-left: 30px;
   }
   .hell-number {
     font-size: 20px;
