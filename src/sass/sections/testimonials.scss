@@ -190,16 +190,26 @@
   }
 }
 @media (min-width: 1280px) {
+  .testimonials {
+    padding: 89px 0 100px;
+  }
   .testimonial-title {
     font-size: 42px;
     line-height: 63px;
+    margin-bottom: 34px;
   }
   .testimonials-content__list {
     padding: 0 80px;
+    margin-bottom: 38px;
   }
   .content-name {
     font-size: 25px;
     line-height: 29px;
+    margin-bottom: 18px;
+  }
+  .first-information {
+    margin-bottom: 20px;
+    padding-right: 240px;
   }
   .review {
     font-size: 17px;
@@ -218,5 +228,12 @@
   }
   .review-face {
     padding: 0 34px 0 86px;
+  }
+  .testimonials__item:not(:last-child) {
+    margin-right: 38px;
+  }
+  .testimonials-button__list {
+    width: 1210px;
+    padding: 0 22px;
   }
 }
