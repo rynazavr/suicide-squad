@@ -17,7 +17,7 @@
       @include font($main-font, 15px, 700, $reverse-text-color, 29px);
       letter-spacing: 1.65px;
       text-transform: uppercase;
-      margin: 0 auto 9px;
+      margin-bottom: 9px;
 
       &::before {
         content: '';
@@ -48,6 +48,10 @@
         background-color: $decore-color;
         margin-right: 14px;
       }
+    }
+
+    &-text {
+      display: none;
     }
 
     &-desc {
@@ -81,6 +85,7 @@
     }
 
     &-desc {
+      display: block;
       @include font($main-font, 13px, 700, $main-text-color, 20px);
       letter-spacing: 0.65px;
     }
@@ -138,7 +143,8 @@
         content: '';
         @include space(2px, 100%, inline-block);
         position: absolute;
-        top: 15px;          left: 63px;
+        top: 15px;
+        left: 63px;
         background-color: #546264;
       }
 
@@ -148,7 +154,7 @@
 
       &-title {
         @include font($main-font, 19px, 700, $reverse-text-color, 29px);
-        letter-spacing: 2.09;
+        letter-spacing: 2.09px;
       }
     }
   }
@@ -215,8 +221,6 @@
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1599px) {}
-
 @media (min-width: 1280px) {
   .program {
     background-image: url('../images/s3-pic-lg.png'), linear-gradient($bg-second-color 0% 99.7%, $bg-color 99.7% 100%);
@@ -277,7 +281,7 @@
       }
 
       &-desc {
-        @include font($main-font, 18.75px, 400, $desc-text-color, 29px);
+        @include font($main-font, 19px, 400, $desc-text-color, 29px);
         letter-spacing: 0.94px;
       }
     }
@@ -334,12 +338,8 @@
     }
 
     &::before {
-      content: '';
       @include space(100%, 4px, block);
-      position: absolute;
       top: 257px;
-      left: 0;
-      background-color: #546264;
     }
 
     &__item {
