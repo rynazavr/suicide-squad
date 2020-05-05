@@ -1,8 +1,5 @@
 .program {
-  background-image: url('../images/s3-pic-sm.png'), linear-gradient($bg-second-color 0% 90.5%, $bg-color 90.5% 100%);
   background-repeat: no-repeat;
-  background-position: 100% 74%;
-
 
   &-wrapper {
     padding: 43px 0 35px;
@@ -11,28 +8,10 @@
   &-title {
     @include font($main-font, 20px, 800, $reverse-text-color, 33px);
     letter-spacing: 1px;
-    text-align: center;
-    margin-bottom: 24px;
   }
 
   &__item {
     position: relative;
-    padding-left: 94px;
-
-    &:not(:last-child) {
-      &::before {
-        content: '';
-        @include space(2px, 100%, inline-block);
-        position: absolute;
-        top: 15px;
-        left: 63px;
-        background-color: #546264;
-      }
-    }
-
-    &:not(:last-child) {
-      padding-bottom: 31px;
-    }
 
     &-title {
       @include font($main-font, 15px, 700, $reverse-text-color, 29px);
@@ -118,8 +97,20 @@
 
 @media (max-width: 767px) {
   .program {
+    background-image: url('../images/s3-pic-sm.png'), linear-gradient($bg-second-color 0% 90.5%, $bg-color 90.5% 100%);
+    background-position: 100% 74%;
+
+    &-title {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
     &__course-materials:not(:last-child) {
       margin-bottom: 7px;
+    }
+
+    &__item {
+      padding-left: 94px;
     }
   }
 
@@ -140,11 +131,30 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {}
+@media (max-width: 1279px) {
+  .program {
+    &__item {
+      &:not(:last-child)::before {
+        content: '';
+        @include space(2px, 100%, inline-block);
+        position: absolute;
+        top: 15px;          left: 63px;
+        background-color: #546264;
+      }
 
-@media (min-width: 1280px) and (max-width: 1599px) {}
+      &:not(:last-child) {
+        padding-bottom: 31px;
+      }
 
-@media (min-width: 768px) {
+      &-title {
+        @include font($main-font, 19px, 700, $reverse-text-color, 29px);
+        letter-spacing: 2.09;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
   .program {
     background-image: url('../images/s3-pic-md.png'), linear-gradient($bg-second-color 0% 88.6%, $bg-color 88.6% 100%);
     background-position: 100% 65%;
@@ -172,7 +182,7 @@
       }
 
       &-course {
-        @include flex($jc: flex-start, $ai: stretch);
+        display: flex;
       }
     }
 
@@ -205,14 +215,104 @@
   }
 }
 
-@media (min-width: 1280px) {
-  .container {
-    width: 1210px;
-  }
-}
+@media (min-width: 1280px) and (max-width: 1599px) {}
 
-@media (min-width: 1600px) {
-  .container {
-    width: 1340px;
+@media (min-width: 1280px) {
+  .program {
+    background-image: url('../images/s3-pic-lg.png'), linear-gradient($bg-second-color 0% 99.7%, $bg-color 99.7% 100%);
+    background-position: 0% 67%;
+
+    &-wrapper {
+      padding: 63px 0 46px;
+    }
+
+    &-title {
+      @include font($main-font, 42px, 800, $reverse-text-color, 63px);
+      letter-spacing: 2.1px;
+      margin-bottom: 24px;
+    }
+
+    &::before {
+      content: '';
+      @include space(100%, 2px, block);
+      position: absolute;
+      top: 159px;
+      left: 0;
+      background-color: #546264;
+    }
+
+    &__list {
+      @include flex(space-between);
+    }
+
+    &__item {
+      padding-top: 51px;
+
+      &-title::before {
+        @include space(17px, 17px);
+        top: 0;
+        left: 0;
+      }
+
+      &:not(:last-child) {
+        width: 250px;
+      }
+
+      &-title {
+        @include font($main-font, 19px, 700, $reverse-text-color, 29px);
+        letter-spacing: 2.09px;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__course-materials {
+      &:not(:last-child) {
+        margin-bottom: 28px;
+      }
+
+      &-title {
+        @include font($main-font, 18px, 500, $decore-text-color, 29px);
+        letter-spacing: 0.9px;
+        margin-bottom: 5px;
+      }
+
+      &-desc {
+        @include font($main-font, 18.75px, 400, $desc-text-color, 29px);
+        letter-spacing: 0.94px;
+      }
+    }
+  }
+
+  .whywe {
+    &-title {
+      @include font($main-font, 42px, 800, $reverse-text-color, 57px);
+      letter-spacing: 2.1px;
+      text-align: center;
+      margin-bottom: 33px;
+    }
+
+    &__list {
+      @include flex(space-between);
+      flex-wrap: wrap;
+      padding: 46px 87px 49px 100px;
+    }
+
+    &__item {
+      width: 300px;
+
+      &:not(:nth-last-child(-n+3)) {
+        margin-bottom: 30px;
+      }
+
+      &-counter::before {
+        @include font($main-font, 19px, 500, $decore-text-color, 29px);
+        margin-bottom: 11px;
+      }
+
+      &-desc {
+        @include font($main-font, 18px, 700, $main-text-color, 29px);
+        letter-spacing: 0.9px;
+      }
+    }
   }
 }
