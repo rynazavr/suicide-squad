@@ -241,3 +241,25 @@
     top: 40%;
   }
 }
+@media (min-width: 1600px) {
+  .testimonials {
+    padding: 125px 0;
+  }
+  .testimonial-title {
+    font-size: 46px;
+  }
+  .testimonials-content__list {
+    padding: 0 120px;
+    margin-bottom: 42px;
+  }
+  .first-information {
+    padding-right: 290px;
+  }
+  .review-information {
+    padding-right: 130px;
+  }
+  .testimonials-button__list {
+    width: 1340px;
+    padding: 0 64px;
+  }
+}
