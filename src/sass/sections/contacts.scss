@@ -90,7 +90,7 @@ input::placeholder {
     font-size: 15px;
     line-height: 20px;
     font-weight: 600;
-    padding-left: 120px;
+
     text-align: left;
   }
   .request-style {
@@ -100,6 +100,11 @@ input::placeholder {
     display: block;
     margin: 0 auto;
     width: 400px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .request {
+    padding-left: 120px;
   }
 }
 @media (min-width: 1280px) {
@@ -116,8 +121,9 @@ input::placeholder {
   .request {
     font-size: 18px;
     line-height: 25px;
-    padding: 0 330px;
+
     margin-bottom: 52px;
+    text-align: center;
   }
   .request-information {
     margin-bottom: 57px;
@@ -138,5 +144,23 @@ input::placeholder {
     height: 70px;
     font-size: 14px;
     letter-spacing: 2.8px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .request {
+    padding: 0 330px;
+  }
+}
+@media (min-width: 1600px) {
+  .contacts {
+    padding: 128px 0 100px;
+    background-image: url('../images/contacts-lg@1,5x.jpg');
+  }
+  .contacts-title {
+    padding: 0 186px;
+    margin-bottom: 66px;
+  }
+  .request {
+    font-size: 25px;
   }
 }
