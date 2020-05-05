@@ -52,6 +52,11 @@
          font-size: 12px;
          font-family: $secondary-font;
       }
+
+      &--tell:hover{
+        background-color: $decore-color;
+        color: $reverse-text-color ;
+      }
     }
   
     &__svg {
@@ -291,12 +296,15 @@
 .header__info--txt{
   font-size: 16px;
   width: 370px;
+  padding-top: 15px;
 }
 
 .header__svg--info{
   width: 200px;
   height: 100px;
   padding-right: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 }
 
