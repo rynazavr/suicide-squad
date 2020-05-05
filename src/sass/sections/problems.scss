@@ -174,7 +174,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1680px) {
   .main-problems {
     background-image: url('../images/fire_tablet.png'),
       linear-gradient(
@@ -197,7 +197,7 @@
   .main-problems__heading {
     @include font($main-font, 46px, 700, $reverse-text-color, 1.5);
     text-align: left;
-    padding: 110px 500px 0px 0px;
+    padding: 110px 550px 0px 0px;
   }
 
   .main-problems__head {

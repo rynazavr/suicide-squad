@@ -109,14 +109,22 @@
 
 @media (min-width: 768px) {
   .prog-list {
-    width: 640px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .how-to__heading {
     @include font($main-font, 26px, 700, $main-text-color, 1.5);
     text-align: center;
     margin-bottom: 36px;
+  }
+
+  .prog-list__item {
+    width: 290px;
+    min-height: 267px;
+    box-shadow: 0px 0px 26px 8px rgba(29, 29, 27, 0.11);
+    padding: 40px 22px 32px 22px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -130,6 +138,7 @@
   .how-to__heading {
     @include font($main-font, 36px, 700, $main-text-color, 1.5);
     text-align: left;
+    margin-bottom: 50px;
   }
 
   .prog-list__item__heading {
@@ -145,22 +154,50 @@
   }
 
   .prog-list {
-    width: 1210px;
-    margin: 0 auto;
+    justify-content: space-between;
   }
 
   .prog-list__item {
-    width: 392px;
-    min-height: 342px;
+    width: 390px;
+    min-height: 340px;
     box-shadow: 0px 0px 26px 8px rgba(29, 29, 27, 0.11);
     padding: 40px 22px 32px 22px;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
   }
 }
 
-@media (max-width: 1680px) {
+@media (max-width: 1679px) {
   .prog-list__item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .how-to__heading {
+    @include font($main-font, 46px, 700, $main-text-color, 1.5);
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  .prog-list__item__heading {
+    @include font($main-font, 21px, 700, $main-text-color, 1.5);
+    display: block;
+    padding-bottom: 20px;
+    letter-spacing: 0.6px;
+  }
+
+  .prog-list__item__content {
+    @include font($main-font, 18px, 400, $desc-text-color, 2);
+    letter-spacing: 0.8px;
+  }
+
+  .prog-list__item {
+    width: 430px;
+    min-height: 400px;
+    box-shadow: 0px 0px 26px 8px rgba(29, 29, 27, 0.11);
+    padding: 40px 40px 40px 40px;
+    margin: 0;
+    text-align: center;
   }
 }
