@@ -21,6 +21,7 @@
   box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
 }
 .content-limitation {
+  display: block;
   width: 80px;
   height: 80px;
   margin: 0 auto 18px;
@@ -237,5 +238,6 @@
   .testimonials-button__list {
     width: 1210px;
     padding: 0 22px;
+    top: 40%;
   }
 }
