@@ -164,14 +164,32 @@
   }
 }
 
-/*@media (max-width: 767px) {
-  .main-problems__item:not(:last-child) {
-    margin-bottom: 20px;
+@media (min-width: 1600px) {
+  .main-problems {
+    background-image: url('../images/fire_tablet.png'),
+      linear-gradient(
+        to bottom,
+        $bg-second-color 26%,
+        $bg-second-color 74%,
+        $bg-color 74%
+      );
+    background-repeat: no-repeat;
+    background-position: 100% 52%;
+  }
+
+  .main-problems__item {
+    text-align: left;
+    margin-bottom: 36px;
+    width: 310px;
+  }
+
+  .main-problems__heading {
+    @include font($main-font, 46px, 700, $reverse-text-color, 1.5);
+    text-align: left;
+    padding: 110px 500px 0px 0px;
+  }
+
+  .main-problems__head {
+    margin-bottom: 76px;
   }
 }
-@media (max-width: 939px) {
-  .main-problems__item:not(:nth-last-child(even)) {
-    margin-bottom: 20px;
-  }
-}
-*/
