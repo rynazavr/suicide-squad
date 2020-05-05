@@ -90,13 +90,13 @@
         $bg-color 74%
       );
     background-repeat: no-repeat;
-    background-position: 100% 30%;
+    background-position: 100% 40%;
   }
 
   .main-problems__heading {
     @include font($main-font, 26px, 700, $reverse-text-color, 1.5);
     text-align: left;
-    padding: 48px 240px 0px 0px;
+    padding: 64px 240px 0px 0px;
   }
 
   .main-problems__float-section {
@@ -118,6 +118,10 @@
     margin-bottom: 12px;
     width: 240px;
   }
+
+  .main-problems__head {
+    margin-bottom: 26px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -130,7 +134,7 @@
         $bg-color 74%
       );
     background-repeat: no-repeat;
-    background-position: 100% 40%;
+    background-position: 100% 46%;
   }
 
   .main-problems__float-section {
@@ -152,7 +156,11 @@
   .main-problems__heading {
     @include font($main-font, 42px, 700, $reverse-text-color, 1.5);
     text-align: left;
-    padding: 48px 480px 0px 0px;
+    padding: 78px 480px 0px 0px;
+  }
+
+  .main-problems__head {
+    margin-bottom: 36px;
   }
 }
 
