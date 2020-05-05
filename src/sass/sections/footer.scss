@@ -60,12 +60,18 @@
     flex-direction: row-reverse;
     padding: 35px 0;
   }
+  .hell-en img {
+    margin-right: 80px;
+  }
   .hell-tel::after {
     content: '';
     width: 29px;
     height: 1px;
     background-color: rgb(224, 224, 224);
     transform: rotate(90deg);
+  }
+  .hell-number {
+    font-size: 20px;
   }
   .footer-contact {
     display: flex;
