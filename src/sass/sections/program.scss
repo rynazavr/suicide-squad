@@ -75,7 +75,7 @@
     &::before {
       content: '';
       @include space(25px, 2px, inline-block);
-      vertical-align: middle;
+      vertical-align: super;
       background-color: $decore-color;
       margin-right: 7px;
     }
@@ -305,13 +305,110 @@
       }
 
       &-counter::before {
-        @include font($main-font, 19px, 500, $decore-text-color, 29px);
+        @include font($main-font, 21px, 500, $decore-text-color, 29px);
+        letter-spacing: 1.04px;
         margin-bottom: 11px;
       }
 
       &-desc {
         @include font($main-font, 18px, 700, $main-text-color, 29px);
         letter-spacing: 0.9px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .program {
+    background-image: url('../images/s3-pic-xl.png'), linear-gradient($bg-second-color 0% 86%, $bg-color 86% 100%);
+    background-position: 0% 72%;
+
+    &-wrapper {
+      padding: 113px 0 87px;
+    }
+
+    &-title {
+      @include font($main-font, 46px, 800, $reverse-text-color, 63px);
+      letter-spacing: 2.29px;
+      margin-bottom: 75px;
+    }
+
+    &::before {
+      content: '';
+      @include space(100%, 4px, block);
+      position: absolute;
+      top: 257px;
+      left: 0;
+      background-color: #546264;
+    }
+
+    &__item {
+      padding-top: 70px;
+
+      &-title::before {
+        @include space(20px, 20px);
+      }
+
+      &:not(:last-child) {
+        width: 265px;
+      }
+
+      &-title {
+        @include font($main-font, 21px, 700, $reverse-text-color, 29px);
+        letter-spacing: 2.31px;
+        margin-bottom: 21px;
+      }
+    }
+
+    &__text-decor {
+      font-size: 29px;
+    }
+
+    &__course-materials {
+      &:not(:last-child) {
+        margin-bottom: 28px;
+      }
+
+      &-title {
+        @include font($main-font, 21px, 500, $decore-text-color, 29px);
+        letter-spacing: 1.05px;
+        margin-bottom: 6px;
+      }
+
+      &-desc {
+        @include font($main-font, 18.75px, 400, $desc-text-color, 29px);
+        letter-spacing: 0.94px;
+      }
+    }
+  }
+
+  .whywe {
+    &-title {
+      @include font($main-font, 46px, 800, $reverse-text-color, 57px);
+      letter-spacing: 2.29px;
+      margin-bottom: 48px;
+    }
+
+    &__list {
+      padding: 65px 64px 75px 98px;
+    }
+
+    &__item {
+      width: 350px;
+
+      &:not(:nth-last-child(-n+3)) {
+        margin-bottom: 38px;
+      }
+
+      &-counter::before {
+        @include font($main-font, 21px, 500, $decore-text-color, 29px);
+        letter-spacing: 1.04px;
+        margin-bottom: 9px;
+      }
+
+      &-desc {
+        @include font($main-font, 21px, 700, $main-text-color, 29px);
+        letter-spacing: 1.04px;
       }
     }
   }
