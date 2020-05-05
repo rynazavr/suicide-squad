@@ -1,12 +1,21 @@
 .contacts {
-  background-image: url('../images/contacts.jpg');
+  background-image: url('../images/contacts-sm.png');
+  background-color: #111517;
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   padding: 52px 0;
 }
 @media (max-width: 767px) {
+  .contacts {
+    background-position: center;
+  }
   .contacts-title {
     padding: 0 20px 0;
+  }
+}
+@media (max-width: 1679px) {
+  .contacts {
+    background-position: center;
   }
 }
 .contacts-title {
@@ -79,7 +88,7 @@ input::placeholder {
 
 @media (min-width: 768px) {
   .contacts {
-    background-image: url('../images/contacts-md.jpg');
+    background-image: url('../images/contacts-md.png');
   }
   .contacts-title {
     font-size: 22px;
@@ -109,7 +118,7 @@ input::placeholder {
 }
 @media (min-width: 1280px) {
   .contacts {
-    background-image: url('../images/contacts-lg.jpg');
+    background-image: url('../images/contacts-lg.png');
     padding: 86px 0 88px;
   }
   .contacts-title {
@@ -146,16 +155,15 @@ input::placeholder {
     letter-spacing: 2.8px;
   }
 }
-@media (min-width: 1280px) and (max-width: 1599px) {
+@media (min-width: 1280px) and (max-width: 1679px) {
   .request {
     padding: 0 330px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1680px) {
   .contacts {
     padding: 128px 0 100px;
-    background-image: url('../images/contacts-lg@1,5x.jpg');
-    background-size: cover;
+    background-image: url('../images/contacts-lg@1,5x.png');
   }
   .contacts-title {
     padding: 0 186px;
