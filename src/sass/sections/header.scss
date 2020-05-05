@@ -258,7 +258,9 @@
   }
 
   .header__nav {
-  
+   
+  display: flex;
+  justify-content: space-between;
     padding-right: 20px;
     padding-top: 20px;
   }
@@ -297,6 +299,9 @@
   font-size: 16px;
   width: 370px;
   padding-top: 15px;
+  transform: translatex(-1px);
+  background-image: url("../image/white.jpg") width="20px" height="20px";
+ 
 }
 
 .header__svg--info{
@@ -305,6 +310,7 @@
   padding-right: 20px;
   padding-top: 20px;
   padding-left: 20px;
+  
 }
 }
 
