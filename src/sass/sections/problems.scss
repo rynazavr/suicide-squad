@@ -9,7 +9,7 @@
   &__heading {
     @include font($main-font, 20px, 700, $reverse-text-color, 1.5);
     text-align: left;
-    padding: 48px 0px 0px 0px;
+    padding: 48px 50px 0px 0px;
 
     &--span {
       color: $decore-text-color;
@@ -72,6 +72,10 @@
   display: block;
 }
 
+.block-mobile {
+  display: block;
+}
+
 .main-problems__parag {
   margin-top: 16px;
 }
@@ -86,7 +90,13 @@
         $bg-color 74%
       );
     background-repeat: no-repeat;
-    background-position: 100% 40%;
+    background-position: 100% 30%;
+  }
+
+  .main-problems__heading {
+    @include font($main-font, 26px, 700, $reverse-text-color, 1.5);
+    text-align: left;
+    padding: 48px 240px 0px 0px;
   }
 
   .main-problems__float-section {
@@ -97,6 +107,10 @@
     min-width: 688px;
     padding-top: 22px;
     padding-bottom: 30px;
+  }
+
+  .block-mobile {
+    display: inline;
   }
 
   .main-problems__item {
@@ -134,6 +148,12 @@
     margin-bottom: 36px;
     width: 310px;
   }
+
+  .main-problems__heading {
+    @include font($main-font, 42px, 700, $reverse-text-color, 1.5);
+    text-align: left;
+    padding: 48px 480px 0px 0px;
+  }
 }
 
 /*@media (max-width: 767px) {
@@ -141,11 +161,9 @@
     margin-bottom: 20px;
   }
 }
-
 @media (max-width: 939px) {
   .main-problems__item:not(:nth-last-child(even)) {
     margin-bottom: 20px;
   }
 }
-
 */
