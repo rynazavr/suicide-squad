@@ -81,3 +81,21 @@
     text-align: left;
   }
 }
+@media (min-width: 1280px) {
+  .hell-en img {
+    margin-right: 254px;
+  }
+  .hell-svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 18px;
+  }
+  .hell-number {
+    font-size: 27px;
+    line-height: 38px;
+    letter-spacing: 1.35px;
+  }
+  .rights-reserved {
+    font-size: 15px;
+  }
+}
