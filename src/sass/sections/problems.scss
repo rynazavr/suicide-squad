@@ -17,7 +17,7 @@
   }
 
   &__item {
-    @include font($main-font, 13px, 700, $main-text-color, 1.5);
+    @include font($main-font, 12px, 700, $main-text-color, 1.5);
     text-align: left;
     margin-bottom: 12px;
     display: block;
@@ -114,8 +114,9 @@
   }
 
   .main-problems__item {
+    @include font($main-font, 13px, 700, $main-text-color, 1.5);
     text-align: left;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
     width: 240px;
   }
 
@@ -148,9 +149,10 @@
   }
 
   .main-problems__item {
+    @include font($main-font, 18px, 700, $main-text-color, 1.5);
     text-align: left;
     margin-bottom: 36px;
-    width: 310px;
+    width: 340px;
   }
 
   .main-problems__heading {
@@ -178,9 +180,10 @@
   }
 
   .main-problems__item {
+    @include font($main-font, 21px, 700, $main-text-color, 1.5);
     text-align: left;
     margin-bottom: 36px;
-    width: 310px;
+    width: 340px;
   }
 
   .main-problems__heading {
