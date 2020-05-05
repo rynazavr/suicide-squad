@@ -189,3 +189,34 @@
     top: 44%;
   }
 }
+@media (min-width: 1280px) {
+  .testimonial-title {
+    font-size: 42px;
+    line-height: 63px;
+  }
+  .testimonials-content__list {
+    padding: 0 80px;
+  }
+  .content-name {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .review {
+    font-size: 17px;
+    line-height: 29px;
+  }
+  .read-more {
+    font-size: 17px;
+    line-height: 29px;
+  }
+  .content-limitation {
+    width: 145px;
+    height: 145px;
+  }
+  .review-information {
+    padding-right: 100px;
+  }
+  .review-face {
+    padding: 0 34px 0 86px;
+  }
+}
