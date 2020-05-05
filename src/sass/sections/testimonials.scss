@@ -35,6 +35,7 @@
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto 16px;
+  background-size: cover;
 }
 .content-name {
   font-size: 13px;
@@ -170,6 +171,7 @@
   .first-information {
     font-size: 13px;
     text-align: left;
+    padding-right: 20px;
   }
   .review {
     text-align: left;
