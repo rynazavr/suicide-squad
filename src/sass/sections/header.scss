@@ -226,6 +226,8 @@
   .header__info {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   
@@ -292,7 +294,7 @@
 }
 
 .header__svg--info{
-  width: 100px;
+  width: 200px;
   height: 100px;
   padding-right: 20px;
 }
