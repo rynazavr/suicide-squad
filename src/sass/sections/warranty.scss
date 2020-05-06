@@ -24,7 +24,6 @@
 
 .warranty__list-item {
   @include font($main-font, 11px, 500, $main-text-color, 1.5);
-  margin-bottom: 28px;
   position: relative;
   padding-left: 30px;
   text-align: left;
@@ -33,20 +32,12 @@
     margin-bottom: 0;
   }
 
-  .bor {
-    border-left: 2px dotted #155789;
-    margin-left: 20px;
-    padding-left: 10px;
-  }
-
   &::before {
-    background-image: url(../images/orange_one_m.png);
+    border-left: 1px dotted #bababa;
     content: '';
-    display: inline-block;
-    width: 15px;
-    height: 19px;
+    height: 100%;
     background-repeat: no-repeat;
-    padding-left: 20px;
+    padding-left: 10px;
     position: absolute;
     left: 1px;
   }
@@ -54,6 +45,23 @@
 
 .text-dec-orange {
   color: $decore-color;
+}
+
+.joy {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.joy:before {
+  background-image: url(../images/orange_one_m.png);
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 19px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  position: absolute;
+  left: -5px;
 }
 
 @media (min-width: 768px) {
