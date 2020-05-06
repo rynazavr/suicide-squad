@@ -1,10 +1,13 @@
-
-let el = document.getElementById('btn');
-
-el.addEventListener('click', e => {
+let el = document.getElementById("btn");
+let closeButton = document.getElementById("close");
+let menu = document.getElementById("menu");
+el.addEventListener("click", (e) => {
     e.preventDefault();
+    menu.classList.add("opened");
 
-    let menu = document.getElementById('menu');
-    menu.classList.toggle('opened');
 });
+closeButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    menu.classList.remove("opened");
 
+});
