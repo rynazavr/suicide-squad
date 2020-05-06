@@ -16,10 +16,9 @@
 
 .testimonials-content__list {
   margin-bottom: 16px;
-}
-.content__list-item {
   box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
 }
+
 .content-limitation {
   display: block;
   width: 80px;
@@ -27,7 +26,7 @@
   margin: 0 auto 18px;
 }
 .content-limitation img {
-  border-radius: 50px;
+  border-radius: 50%;
 }
 .social-link-vk {
   width: 25px;
@@ -95,13 +94,15 @@
   .testimonials__item:not(:last-child) {
     margin-right: 11px;
   }
+  .testimonials__list {
+    width: 185px;
+  }
 }
 
 //testimonials__list
 
 .testimonials__list {
   display: flex;
-  width: 185px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -135,21 +136,6 @@
 .icon--7 {
   background-image: url(../images/7.png);
 }
-
-// testimonials-button
-
-// .testimonials-button__list {
-//   display: flex;
-//   justify-content: space-between;
-//   width: 280px;
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-50%);
-// }
-// .testimonials-button {
-//   border: none;
-//   background-color: transparent;
-// }
 
 @media (min-width: 768px) {
   .testimonial-title {
@@ -187,10 +173,6 @@
   .testimonials__item:not(:last-child) {
     margin-right: 20px;
   }
-  // .testimonials-button__list {
-  //   width: 688px;
-  //   top: 44%;
-  // }
 }
 @media (min-width: 1280px) {
   .testimonials {
@@ -235,11 +217,6 @@
   .testimonials__item:not(:last-child) {
     margin-right: 38px;
   }
-  // .testimonials-button__list {
-  //   width: 1210px;
-  //   padding: 0 22px;
-  //   top: 40%;
-  // }
 }
 @media (min-width: 1680px) {
   .testimonials {
@@ -258,8 +235,33 @@
   .review-information {
     padding-right: 130px;
   }
-  // .testimonials-button__list {
-  //   width: 1340px;
-  //   padding: 0 64px;
-  // }
+}
+
+// slider
+
+.slick-arrow::before {
+  color: $decore-color;
+}
+
+@media (max-width: 767px) {
+  .testimonials-slider {
+    position: relative;
+  }
+  .testimonials-content__list {
+    position: static;
+  }
+  .slick-prev,
+  .slick-next {
+    top: 94%;
+  }
+}
+
+@media (min-width: 768px) {
+  .slick-initialized .slick-slide {
+    display: flex;
+    outline: none;
+  }
+  .testimonials__item .slick-slide {
+    width: 54px;
+  }
 }
