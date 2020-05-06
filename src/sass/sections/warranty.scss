@@ -52,6 +52,7 @@
   padding-bottom: 20px;
 }
 
+
 .joy:before {
   background-image: url(../images/orange_one_m.png);
   content: '';
@@ -65,8 +66,9 @@
 }
 
 @media (min-width: 768px) {
-  .type-one::after {
-    height: 170px;
+  
+  .joy {
+    padding-bottom: 28px;
   }
 
   .warranty__list {
@@ -102,5 +104,9 @@
       font-weight: 500;
       letter-spacing: 0.6px;
     }
+  }
+
+  .joy {
+    padding-bottom: 38px;
   }
 }

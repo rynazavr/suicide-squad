@@ -110,6 +110,7 @@
 @media (min-width: 768px) {
   .prog-list {
     margin: 0;
+    width: 640px;
   }
 
   .how-to__heading {
@@ -155,6 +156,7 @@
 
   .prog-list {
     justify-content: space-between;
+    width: 1210px;
   }
 
   .prog-list__item {
@@ -171,11 +173,15 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1680px) {
   .how-to__heading {
     @include font($main-font, 46px, 700, $main-text-color, 1.5);
     text-align: left;
     margin-bottom: 60px;
+  }
+
+  .prog-list {
+    width: 1340px;
   }
 
   .prog-list__item__heading {
