@@ -1,0 +1,96 @@
+.teacher {
+  padding: 40px 0 38px;
+
+  &-title {
+    @include font($main-font, 20px, 800, $secondary-text-color, 30px);
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+  }
+
+  &-photo {
+
+  }
+}
+
+.skills {
+  &-wrapper {
+    padding-top: 16px;
+  }
+
+  &-title {
+    @include font($main-font, 16px, 800, $secondary-text-color, 29px);
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+
+    &::after {
+      content: '';
+      @include space(100%, 1px);
+      background-color: rgba(133, 133, 133, 0.38);
+    }
+  }
+
+  &__list {
+    margin-bottom: 18px;
+  }
+
+  &__item {
+    position: relative;
+    @include font($main-font, 13px, 600, $secondary-text-color, 20px);
+    letter-spacing: 0.65px;
+    padding-left: 34px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &:first-child {
+      padding-right: 30px;
+    }
+  }
+}
+
+.icon--check::before {
+  content: '';
+  @include space(16px, 20px, inline-block);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../images/check.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.biography {
+  &__inner {
+    padding-left: 15px;
+
+    &::before {
+      content: '';
+      @include space(25px, 2px, block);
+      background-color: $decore-color;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__desc {
+    @include font($main-font, 11px, 400, $desc-text-color, 20px);
+    letter-spacing: 0.6px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 14px;
+    }
+
+    &:last-of-type {
+      hyphens: auto;
+      margin-bottom: 7px;
+    }
+  }
+
+  &__link {
+    @include font($main-font, 11px, 400, $decore-text-color, 29px);
+    letter-spacing: 0.35px;
+    text-transform: none;
+    text-decoration: underline;
+  }
+}
