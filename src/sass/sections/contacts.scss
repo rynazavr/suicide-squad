@@ -55,6 +55,13 @@
   border-width: 1px;
   border-color: $bg-color;
   border-style: solid;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: $main-font;
+  letter-spacing: 0.65px;
+  color: $bg-color;
+  padding-left: 22px;
 }
 .request-input:nth-child(1) {
   margin-bottom: 20px;
@@ -66,7 +73,6 @@ input::placeholder {
   font-family: $main-font;
   letter-spacing: 0.65px;
   color: $bg-color;
-  padding-left: 22px;
 }
 .contact-form-button {
   display: block;
