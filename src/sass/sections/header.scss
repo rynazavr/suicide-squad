@@ -163,7 +163,19 @@
   height: 30px;
 }
 
+.open {
+  background-image: url("../images/hamburger_icon.png");
+  width: 30px;
+  height: 30px;
+  border: none;
+}
 
+.btn-close {
+  width: 30px;
+  height: 30px;
+  border: none;
+
+}
 
 .header__hover {
   display: none;
@@ -239,7 +251,7 @@
  
 .opened {
   display: block;
-  background-color: red;
+  
 }
 
 @media (max-width: 767px) {
