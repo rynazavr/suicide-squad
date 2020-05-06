@@ -28,11 +28,7 @@
   padding-left: 30px;
   text-align: left;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  &::before {
+  &:not(:last-child):before {
     border-left: 1px dotted #bababa;
     content: '';
     height: 100%;
@@ -52,7 +48,6 @@
   padding-bottom: 20px;
 }
 
-
 .joy:before {
   background-image: url(../images/orange_one_m.png);
   content: '';
@@ -66,7 +61,7 @@
 }
 
 @media (min-width: 768px) {
-  
+
   .joy {
     padding-bottom: 28px;
   }
@@ -101,6 +96,31 @@
     &__list {
       line-height: normal;
       font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  .joy {
+    padding-bottom: 38px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .warranty {
+    &__section-title {
+      font-size: 46px;
+      margin: 42px 35px 0 35px;
+      padding-bottom: 42px;
+    }
+
+    &__list-item {
+      font-size: 21px;
+    }
+    
+    &__list {
+      line-height: normal;
+      font-size: 21px;
       font-weight: 500;
       letter-spacing: 0.6px;
     }
