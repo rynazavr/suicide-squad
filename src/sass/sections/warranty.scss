@@ -48,7 +48,24 @@
   padding-bottom: 20px;
 }
 
+.joy-last {
+  display: block;
+  padding-bottom: 0px;
+}
+
 .joy:before {
+  background-image: url(../images/orange_one_m.png);
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 19px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  position: absolute;
+  left: -5px;
+}
+
+.joy-last:before {
   background-image: url(../images/orange_one_m.png);
   content: '';
   display: inline-block;
