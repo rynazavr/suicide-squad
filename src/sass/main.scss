@@ -7,10 +7,12 @@
 @import './helpers/variables.scss';
 @import './helpers/mixins.scss';
 @import './helpers/placeholders.scss';
+@import './components/slick.scss';
 @import 'base.scss';
 
 //COMPONENTS
-@import "./components/button.scss";
+@import './components/button.scss';
+@import './components/slick-theme.scss';
 
 //SECTIONS
 @import './sections/header.scss';
@@ -21,4 +23,3 @@
 @import './sections/testimonials.scss';
 @import './sections/contacts.scss';
 @import './sections/footer.scss';
-
