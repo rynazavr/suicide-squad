@@ -27,7 +27,9 @@
       fill: $decore-color;
     }
 
-    &:hover {
+    &:hover,
+    &:focus
+     {
       background-color: $decore-color;
 
       .prog-list__item--icon {
