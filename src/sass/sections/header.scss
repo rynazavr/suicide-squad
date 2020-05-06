@@ -153,36 +153,17 @@
       }
     }
   
-}
+  }
 
 
-.logo__fire {
-  content: "";
-  background-image: ("../images/icons/fire.png");
-  width: 30px;
-  height: 30px;
-}
 
-.open {
-  background-image: url("../images/hamburger_icon.png");
-  width: 30px;
-  height: 30px;
-  border: none;
-}
-
-.btn-close {
-  width: 30px;
-  height: 30px;
-  border: none;
-
-}
 
 .header__hover {
   display: none;
   position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     
     &__logo {
             display: flex;
@@ -214,12 +195,10 @@
         
     }
     
-    &__block {
-
-    }
-
-    &--nav {
-
+    .hover_head {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 10px;
     }
 
     &--info {
@@ -236,18 +215,12 @@
          &--info:hover {
             color: $decore-text-color;
         }
+}    
 
-    
 
-    &__btn {
-        
-
-    }
-
-    &__imput {
-
-    }
-}     
+.btn-close, .open {
+  background-color: transparent;
+}
  
 .opened {
   display: block;
