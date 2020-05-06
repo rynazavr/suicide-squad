@@ -1,5 +1,4 @@
 $('.testimonials-content__list').slick({
-  //   dots: true,
   infinite: false,
   asNavFor: '.testimonials__list',
 });
