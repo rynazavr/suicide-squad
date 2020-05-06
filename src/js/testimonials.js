@@ -9,11 +9,13 @@ $('.testimonials__list').slick({
   infinite: false,
   focusOnSelect: true,
   arrows: false,
+  slidesToScroll: 7,
   responsive: [
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 3,
+        slidesToScroll: 1,
       }
     }
   ]
