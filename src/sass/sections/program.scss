@@ -231,7 +231,8 @@
     }
 
     &-title {
-      @include font($main-font, 42px, 800, $reverse-text-color, 63px);
+      font-size: 42px;
+      line-height: 63px;
       letter-spacing: 2.1px;
       margin-bottom: 24px;
     }
@@ -263,7 +264,7 @@
       }
 
       &-title {
-        @include font($main-font, 19px, 700, $reverse-text-color, 29px);
+        font-size: 19px;
         letter-spacing: 2.09px;
         margin-bottom: 30px;
       }
@@ -275,13 +276,13 @@
       }
 
       &-title {
-        @include font($main-font, 18px, 500, $decore-text-color, 29px);
+        font-size: 18px;
         letter-spacing: 0.9px;
         margin-bottom: 5px;
       }
 
       &-desc {
-        @include font($main-font, 19px, 400, $desc-text-color, 29px);
+        font-size: 19px;
         letter-spacing: 0.94px;
       }
     }
@@ -289,7 +290,8 @@
 
   .whywe {
     &-title {
-      @include font($main-font, 42px, 800, $reverse-text-color, 57px);
+      font-size: 42px;
+      line-height: 57px;
       letter-spacing: 2.1px;
       text-align: center;
       margin-bottom: 33px;
@@ -309,13 +311,14 @@
       }
 
       &-counter::before {
-        @include font($main-font, 21px, 500, $decore-text-color, 29px);
+        font-size: 21px;
         letter-spacing: 1.04px;
         margin-bottom: 11px;
       }
 
       &-desc {
-        @include font($main-font, 18px, 700, $main-text-color, 29px);
+        font-size: 18px;
+        line-height: 29px;
         letter-spacing: 0.9px;
       }
     }
@@ -332,13 +335,13 @@
     }
 
     &-title {
-      @include font($main-font, 46px, 800, $reverse-text-color, 63px);
+      font-size: 46px;
       letter-spacing: 2.29px;
       margin-bottom: 75px;
     }
 
     &::before {
-      @include space(100%, 4px, block);
+      height: 4px;
       top: 257px;
     }
 
@@ -354,7 +357,7 @@
       }
 
       &-title {
-        @include font($main-font, 21px, 700, $reverse-text-color, 29px);
+        font-size: 21px;
         letter-spacing: 2.31px;
         margin-bottom: 21px;
       }
@@ -365,26 +368,21 @@
     }
 
     &__course-materials {
-      &:not(:last-child) {
-        margin-bottom: 28px;
-      }
-
       &-title {
-        @include font($main-font, 21px, 500, $decore-text-color, 29px);
+        font-size: 21px;
         letter-spacing: 1.05px;
         margin-bottom: 6px;
       }
 
       &-desc {
-        @include font($main-font, 18.75px, 400, $desc-text-color, 29px);
-        letter-spacing: 0.94px;
+        font-size: 18.75px;
       }
     }
   }
 
   .whywe {
     &-title {
-      @include font($main-font, 46px, 800, $reverse-text-color, 57px);
+      font-size: 46px;
       letter-spacing: 2.29px;
       margin-bottom: 48px;
     }
@@ -401,13 +399,11 @@
       }
 
       &-counter::before {
-        @include font($main-font, 21px, 500, $decore-text-color, 29px);
-        letter-spacing: 1.04px;
         margin-bottom: 9px;
       }
 
       &-desc {
-        @include font($main-font, 21px, 700, $main-text-color, 29px);
+        font-size: 21px;
         letter-spacing: 1.04px;
       }
     }

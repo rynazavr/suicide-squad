@@ -255,10 +255,8 @@
       max-width: 760px;
     }
 
-    &-title {
-      &::after {
-        width: 658px;
-      }
+    &-title::after {
+      width: 658px;
     }
 
     &__list {
