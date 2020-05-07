@@ -39,7 +39,6 @@
   background-image: url('../images/icon_insta.svg');
   background-position: center;
 }
-
 .copyright {
   background-color: $bg-second-color;
 }
@@ -51,7 +50,6 @@
   text-align: center;
   line-height: 72px;
 }
-
 @media (min-width: 768px) {
   .hell-en {
     display: flex;
@@ -60,9 +58,9 @@
     flex-direction: row-reverse;
     padding: 35px 0;
   }
-  .hell-en img {
+  .footer-logo-link {
     margin-right: 80px;
-  }
+   }
   .hell-tel::after {
     content: '';
     width: 1px;
@@ -82,9 +80,9 @@
   }
 }
 @media (min-width: 1280px) {
-  .hell-en img {
+  .footer-logo-link {
     margin-right: 254px;
-  }
+   }
   .hell-svg {
     width: 32px;
     height: 32px;
@@ -100,7 +98,7 @@
   }
 }
 @media (min-width: 1680px) {
-  .hell-en img {
+  .footer-logo-link {
     margin-right: 306px;
-  }
+   }
 }

@@ -139,7 +139,7 @@
 
 @media (min-width: 1280px) {
   .how-to__heading {
-    @include font($main-font, 36px, 700, $main-text-color, 1.5);
+    @include font($main-font, 42px, 700, $main-text-color, 1.5);
     text-align: left;
     margin-bottom: 50px;
   }

@@ -2,10 +2,18 @@
     <div class="header__hover" id="menu">
         <div class="hover_head">
             <div class="header__hover__logo">
-                <a class="header__hover__logo--name"><img src="./images/hover_logo.png" alt=""></a>
+                <a class="header__hover__logo--name">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="./images/hover_logo.png">
+                        <img src="./images/hover_logo_sm.png" alt="hellen">
+                    </picture>
+                </a>
             </div>
             <button class="btn-close" id="close">
-                <img class="close_btn" src="./images/hover_close.png" height="30" width="30">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./images/hover_close.png">
+                    <img src="./images/hover_close_sm.png" alt="hellen">
+                </picture>
             </button>
         </div>
         <div class="header__hover__block">
@@ -17,13 +25,13 @@
             </nav>
         </div>
         <div class="header__hover__imput">
-            <button class="btn btn-main">консультация по телефону</button>
+            <button class="btn btn-main" form="call-form">консультация по телефону</button>
         </div>
     </div>
     <div class="container">
         <div class="header__top">
             <div class="header__logo">
-                <a class="header__logo"><img src="./images/head_logo.png" height="20" width="120" alt=""></a></a>
+                <a class="header__logo"><img src="./images/footer-logo.png" height="20" width="120" alt=""></a></a>
             </div>
 
             <div class="header__mobile">
@@ -34,7 +42,7 @@
             </div>
 
             <div class="header__tablet">
-                <button class="header__btn--tell">консультация по телефону</button>
+                <button class="header__btn--tell" form="call-form">консультация по телефону</button>
 
                 <div class="header__burger">
                     <button class="open" id="btn_t"><img src="./images/Hamburger_icon.png" height="30" width="30">
@@ -50,7 +58,7 @@
                         <a href="#" class="header__nav--info">варианты обучения</a>
                         <a href="#" class="header__nav--info nav--block">контакты</a>
                     </nav>
-                    <button class="header__btn--tell">консультация по телефону</button>
+                    <button class="header__btn--tell" form="call-form">консультация по телефону</button>
 
                 </div>
         </div>
@@ -66,7 +74,7 @@
                         <span class="header__title__txt--orange">+25 баллов</span>
                     </p>
                 </div>
-                <button class="header__btn btn btn-main">
+                <button class="header__btn btn btn-main" form="call-form">
                     хочу на бесплатное занятие
                 </button>
             </div>

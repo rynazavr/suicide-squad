@@ -1,22 +1,4 @@
 $('.testimonials-content__list').slick({
   infinite: false,
-  asNavFor: '.testimonials__list',
-});
-
-$('.testimonials__list').slick({
-  asNavFor: '.testimonials-content__list',
-  slidesToShow: 7,
-  infinite: false,
-  focusOnSelect: true,
-  arrows: false,
-  slidesToScroll: 7,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-      }
-    }
-  ]
+  dots: true,
 });

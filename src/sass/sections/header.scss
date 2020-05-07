@@ -51,6 +51,7 @@
          color: $decore-color ;
          font-size: 12px;
          font-family: $secondary-font;
+         background-color: transparent;
       }
 
       &--tell:hover{
@@ -69,7 +70,7 @@
         border: 2px solid $decore-color;
         width: 60px;
         height: 60px;
-        padding: 5px 5px 5px 5px;  
+        padding: 5px 5px 5px 5px;
        
       }
     }
@@ -139,6 +140,8 @@
     }
   
     &__info {
+      padding-bottom: 25px;
+
       &--block {
         display: flex;
         width: 250px;
@@ -297,7 +300,6 @@
     display: flex;
     justify-content: space-around;
     padding-bottom: 50px;
-    margin-bottom: 40px;
   }
 
   
