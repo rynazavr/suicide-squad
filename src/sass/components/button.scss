@@ -21,7 +21,7 @@
 }
 
 .btn-main {
-  @include font($secondary-font, 11px, 700, $secondary-text-color);
+  @include font($secondary-font, 11px, 700, $reverse-text-color);
   background-color: $decore-color;
 }
 

@@ -1,0 +1,409 @@
+.program {
+  background-repeat: no-repeat;
+  position: relative;
+
+  &-wrapper {
+    padding: 44px 0 36px;
+  }
+
+  &-title {
+    @include font($main-font, 20px, 800, $reverse-text-color, 33px);
+    letter-spacing: 1px;
+  }
+
+  &__item {
+    position: relative;
+
+    &-title {
+      @include font($main-font, 15px, 700, $reverse-text-color, 29px);
+      letter-spacing: 1.65px;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+
+      &::before {
+        content: '';
+        @include space(10px, 10px, inline-block);
+        position: absolute;
+        top: 10px;
+        left: 59px;
+        border-radius: 50%;
+        background-color: $decore-color;
+      }
+    }
+  }
+
+  &__course-materials {
+    p:first-of-type {
+      padding-right: 40px;
+    }
+
+    &-title {
+      @include font($main-font, 13px, 500, $decore-text-color, 29px);
+      letter-spacing: 0.65px;
+      margin-bottom: 7px;
+
+      &::before {
+        content: '';
+        @include space(25px, 2px, inline-block);
+        vertical-align: super;
+        background-color: $decore-color;
+        margin-right: 14px;
+      }
+    }
+
+    &-text {
+      display: none;
+    }
+
+    &-desc {
+      @include font($main-font, 11px, 400, $desc-text-color, 20px);
+      letter-spacing: 0.55px;
+    }
+  }
+}
+
+.whywe {
+  &-title {
+    @include font($main-font, 20px, 800, $reverse-text-color, 30px);
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+
+  &__list {
+    counter-reset: count-list;
+    box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+    background-color: $bg-color;
+    padding: 14px 28px 21px;
+  }
+
+  &__item {
+    &::before {
+      content: '';
+      @include space(25px, 2px, inline-block);
+      vertical-align: super;
+      background-color: $decore-color;
+      margin-right: 7px;
+    }
+
+    &-desc {
+      display: block;
+      @include font($main-font, 13px, 700, $main-text-color, 20px);
+      letter-spacing: 0.65px;
+    }
+
+    &-counter::before {
+      counter-increment: count-list;
+      content: counter(count-list, decimal-leading-zero);
+      display: inline-block;
+      @include font($main-font, 14px, 500, $decore-text-color, 29px);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .program {
+    background-image: url('../images/s3-pic-sm.png'), linear-gradient($bg-second-color 0% 90.5%, $bg-color 90.5% 100%);
+    background-position: 100% 74%;
+
+    &-title {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    &__course-materials:not(:last-child) {
+      margin-bottom: 7px;
+    }
+
+    &__item {
+      padding-left: 94px;
+    }
+  }
+
+  .whywe {
+    &-title {
+      padding-right: 20px;
+    }
+
+    &__item {
+      &:nth-child(3) {
+        padding-right: 10px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .program {
+    &__item {
+      &:not(:last-child)::before {
+        content: '';
+        @include space(2px, 100%, inline-block);
+        position: absolute;
+        top: 15px;
+        left: 63px;
+        background-color: #546264;
+      }
+
+      &:not(:last-child) {
+        padding-bottom: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .program {
+    background-image: url('../images/s3-pic-md.png'), linear-gradient($bg-second-color 0% 88.6%, $bg-color 88.6% 100%);
+    background-position: 100% 65%;
+
+    &-wrapper {
+      padding: 45px 0 148px;
+    }
+
+    &-title {
+      font-size: 26px;
+      line-height: 63px;
+      letter-spacing: 1.3px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      padding-left: 144px;
+
+      &:not(:last-child)::before {
+        left: 91px;
+      }
+
+      &-title::before {
+        left: 87px;
+      }
+
+      &-course {
+        display: flex;
+      }
+    }
+
+    &__course-materials {
+      width: 180px;
+    }
+  }
+
+  .whywe {
+    &-title {
+      font-size: 26px;
+      line-height: 62px;
+      letter-spacing: 1.3px;
+      text-align: center;
+      margin-bottom: 7px;
+    }
+
+    &__list {
+      @include flex(space-between);
+      flex-wrap: wrap;
+      padding: 20px 90px 26px 108px;
+    }
+
+    &__item {
+      width: 218px;
+
+      &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .program {
+    background-image: url('../images/s3-pic-lg.png'), linear-gradient($bg-second-color 0% 99.7%, $bg-color 99.7% 100%);
+    background-position: 0% 67%;
+
+    &-wrapper {
+      padding: 63px 0 46px;
+    }
+
+    &-title {
+      font-size: 42px;
+      line-height: 63px;
+      letter-spacing: 2.1px;
+      margin-bottom: 24px;
+    }
+
+    &::before {
+      content: '';
+      @include space(100%, 2px, block);
+      position: absolute;
+      top: 159px;
+      left: 0;
+      background-color: #546264;
+    }
+
+    &__list {
+      @include flex(space-between);
+    }
+
+    &__item {
+      padding-top: 51px;
+
+      &-title::before {
+        @include space(17px, 17px);
+        top: 0;
+        left: 0;
+      }
+
+      &:not(:last-child) {
+        width: 250px;
+      }
+
+      &-title {
+        font-size: 19px;
+        letter-spacing: 2.09px;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__course-materials {
+      &:not(:last-child) {
+        margin-bottom: 28px;
+      }
+
+      &-title {
+        font-size: 18px;
+        letter-spacing: 0.9px;
+        margin-bottom: 5px;
+      }
+
+      &-desc {
+        font-size: 18.75px;
+        line-height: 29px;
+        letter-spacing: 0.94px;
+      }
+    }
+  }
+
+  .whywe {
+    &-title {
+      font-size: 42px;
+      line-height: 57px;
+      letter-spacing: 2.1px;
+      text-align: center;
+      margin-bottom: 33px;
+    }
+
+    &__list {
+      @include flex(space-between);
+      flex-wrap: wrap;
+      padding: 46px 87px 47px 100px;
+    }
+
+    &__item {
+      width: 300px;
+
+      &:not(:nth-last-child(-n+3)) {
+        margin-bottom: 30px;
+      }
+
+      &-counter::before {
+        font-size: 21px;
+        letter-spacing: 1.04px;
+        margin-bottom: 11px;
+      }
+
+      &-desc {
+        font-size: 18px;
+        line-height: 29px;
+        letter-spacing: 0.9px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .program {
+    background-image: url('../images/s3-pic-xl.png'), linear-gradient($bg-second-color 0% 86%, $bg-color 86% 100%);
+    background-position: 0% 72%;
+
+    &-wrapper {
+      padding: 113px 0 87px;
+    }
+
+    &-title {
+      font-size: 46px;
+      letter-spacing: 2.29px;
+      margin-bottom: 75px;
+    }
+
+    &::before {
+      height: 4px;
+      top: 257px;
+    }
+
+    &__item {
+      padding-top: 70px;
+
+      &-title::before {
+        @include space(20px, 20px);
+      }
+
+      &:not(:last-child) {
+        width: 265px;
+      }
+
+      &-title {
+        font-size: 21px;
+        letter-spacing: 2.31px;
+        margin-bottom: 21px;
+      }
+    }
+
+    &__text-decor {
+      font-size: 29px;
+    }
+
+    &__course-materials {
+      &-title {
+        font-size: 21px;
+        letter-spacing: 1.05px;
+        margin-bottom: 6px;
+      }
+
+      &-desc {
+        font-size: 18.75px;
+      }
+    }
+  }
+
+  .whywe {
+    &-title {
+      font-size: 46px;
+      letter-spacing: 2.29px;
+      margin-bottom: 48px;
+    }
+
+    &__list {
+      padding: 65px 64px 75px 98px;
+    }
+
+    &__item {
+      width: 350px;
+
+      &:not(:nth-last-child(-n+3)) {
+        margin-bottom: 38px;
+      }
+
+      &-counter::before {
+        margin-bottom: 9px;
+      }
+
+      &-desc {
+        font-size: 21px;
+        letter-spacing: 1.04px;
+      }
+    }
+  }
+}

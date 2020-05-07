@@ -1,0 +1,220 @@
+.main-problems {
+  background-image: linear-gradient(
+    to bottom,
+    $bg-second-color 26%,
+    $bg-second-color 74%,
+    $bg-color 74%
+  );
+
+  &__heading {
+    @include font($main-font, 20px, 700, $reverse-text-color, 1.5);
+    text-align: left;
+    padding: 48px 50px 0px 0px;
+
+    &--span {
+      color: $decore-text-color;
+    }
+  }
+
+  &__item {
+    @include font($main-font, 12px, 700, $main-text-color, 1.5);
+    text-align: left;
+    margin-bottom: 12px;
+    display: block;
+    width: 236px;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 25px;
+      height: 2px;
+      background-color: $decore-color;
+      margin-right: 5px;
+    }
+  }
+
+  .item-decor::before {
+    counter-increment: counter-list;
+    content: '' counter(counter-list, decimal-leading-zero);
+    text-align: left;
+    color: $decore-color;
+  }
+
+  &__head {
+    margin-bottom: 20px;
+  }
+
+  &__float-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    background-color: $bg-color;
+    padding-top: 22px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 26px 8px rgba(29, 29, 27, 0.11);
+    counter-reset: counter-list;
+  }
+
+  &__wrapper {
+    margin-bottom: 46px;
+  }
+}
+
+.block {
+  display: block;
+}
+
+.block-mobile {
+  display: block;
+}
+
+.main-problems__parag {
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .main-problems {
+    background-image: url('../images/fire_tablet.png'),
+      linear-gradient(
+        to bottom,
+        $bg-second-color 26%,
+        $bg-second-color 74%,
+        $bg-color 74%
+      );
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+  }
+
+  .main-problems__heading {
+    @include font($main-font, 26px, 700, $reverse-text-color, 1.5);
+    text-align: left;
+    padding: 64px 240px 0px 0px;
+  }
+
+  .main-problems__float-section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-around;
+    min-width: 688px;
+    padding-top: 22px;
+    padding-bottom: 30px;
+  }
+
+  .block-mobile {
+    display: inline;
+  }
+
+  .main-problems__item {
+    @include font($main-font, 13px, 700, $main-text-color, 1.5);
+    text-align: left;
+    margin-bottom: 13px;
+    width: 240px;
+  }
+
+  .main-problems__head {
+    margin-bottom: 26px;
+  }
+
+  .main-problems__wrapper {
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-problems {
+    background-image: url('../images/fire_tablet.png'),
+      linear-gradient(
+        to bottom,
+        $bg-second-color 26%,
+        $bg-second-color 74%,
+        $bg-color 74%
+      );
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+  }
+
+  .main-problems__float-section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    min-width: 1210px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .main-problems__item {
+    @include font($main-font, 18px, 700, $main-text-color, 1.5);
+    text-align: left;
+    margin-bottom: 36px;
+    width: 340px;
+  }
+
+  .main-problems__heading {
+    @include font($main-font, 42px, 700, $reverse-text-color, 1.5);
+    text-align: left;
+    padding: 78px 480px 0px 0px;
+  }
+
+  .main-problems__head {
+    margin-bottom: 36px;
+  }
+
+  .main-problems__wrapper {
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .main-problems {
+    background-image: url('../images/fire_tablet.png'),
+      linear-gradient(
+        to bottom,
+        $bg-second-color 26%,
+        $bg-second-color 74%,
+        $bg-color 74%
+      );
+    background-repeat: no-repeat;
+    background-position: 100% 56%;
+  }
+
+  .main-problems__item {
+    @include font($main-font, 21px, 700, $main-text-color, 1.5);
+    text-align: left;
+    margin-bottom: 36px;
+    width: 340px;
+  }
+
+  .main-problems__heading {
+    @include font($main-font, 46px, 700, $reverse-text-color, 1.5);
+    text-align: left;
+    padding: 110px 550px 0px 0px;
+  }
+
+  .main-problems__head {
+    margin-bottom: 76px;
+  }
+
+  .main-problems__wrapper {
+    margin-bottom: 136px;
+  }
+
+  .main-problems__float-section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    min-width: 1340px;
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+}
