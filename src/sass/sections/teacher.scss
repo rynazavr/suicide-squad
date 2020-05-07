@@ -1,0 +1,280 @@
+.teacher {
+  padding: 40px 0 38px;
+
+  &-title {
+    @include font($main-font, 20px, 800, $secondary-text-color, 30px);
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+  }
+}
+
+.skills {
+  &-title {
+    @include font($main-font, 16px, 800, $secondary-text-color, 29px);
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+
+    &::after {
+      content: '';
+      @include space(100%, 1px);
+      background-color: rgba(133, 133, 133, 0.38);
+    }
+  }
+
+  &__list {
+    margin-bottom: 18px;
+  }
+
+  &__item {
+    position: relative;
+    @include font($main-font, 13px, 600, $secondary-text-color, 20px);
+    letter-spacing: 0.65px;
+    padding-left: 34px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.icon--check::before {
+  content: '';
+  @include space(16px, 20px, inline-block);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../images/check.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.biography {
+  &__inner::before {
+    content: '';
+    @include space(25px, 2px, block);
+    background-color: $decore-color;
+    margin-bottom: 14px;
+  }
+
+  &__desc {
+    @include font($main-font, 11px, 400, $desc-text-color, 20px);
+    letter-spacing: 0.6px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 14px;
+    }
+
+    &:last-of-type {
+      hyphens: auto;
+      margin-bottom: 7px;
+    }
+  }
+
+  &__link {
+    @include font($main-font, 11px, 400, $decore-text-color, 29px);
+    letter-spacing: 0.35px;
+    text-transform: none;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills {
+    &-wrapper {
+      padding-top: 16px;
+    }
+
+    &__item {
+      &:first-child {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  .biography {
+    &__inner {
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .teacher {
+    padding: 43px 0 32px;
+
+    &-title {
+      font-size: 26px;
+      line-height: 63px;
+      letter-spacing: 1.3px;
+      margin-bottom: 8px;
+    }
+
+    &-box {
+      @include flex(space-between);
+    }
+
+    &-photo {
+      padding-top: 7px;
+    }
+  }
+
+  .skills {
+    &-wrapper {
+      max-width: 398px;
+    }
+
+    &-title {
+      font-size: 20px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+
+      &::after {
+        margin-top: 9px;
+      }
+    }
+
+    &__list {
+      padding-right: 22px;
+    }
+
+    &__item {
+      padding-left: 34px;
+      hyphens: auto;
+
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+  }
+
+  .biography {
+    &__inner::before {
+      margin-bottom: 13px;
+    }
+
+    &__desc {
+      letter-spacing: 0.58px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 17px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .teacher {
+    padding: 77px 0 71px;
+
+    &-title {
+      font-size: 42px;
+      letter-spacing: 2.1px;
+      margin-bottom: 41px;
+    }
+
+    &-photo {
+      padding-top: 4px;
+    }
+  }
+
+  .skills {
+    &-wrapper {
+      max-width: 632px;
+    }
+
+    &-title {
+      font-size: 29px;
+      letter-spacing: 1.45px;
+      margin-bottom: 33px;
+
+      &::after {
+        width: 600px;
+        margin-top: 12px;
+      }
+    }
+
+    &__list {
+      padding: 0 112px 0 5px;
+      margin-bottom: 26px;
+    }
+
+    &__item {
+      font-size: 17px;
+      line-height: 29px;
+      letter-spacing: 0.65px;
+      padding-left: 44px;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .icon--check::before {
+    @include space(24px, 26px, inline-block);
+  }
+
+  .biography {
+    &__inner::before {
+      margin-bottom: 28px;
+    }
+
+    &__desc {
+      font-size: 17px;
+      line-height: 29px;
+      letter-spacing: 0.77px;
+
+      &:last-of-type {
+        margin-bottom: 17px;
+      }
+    }
+
+    &__link {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .teacher {
+    padding: 107px 0 118px;
+
+    &-title {
+      font-size: 46px;
+      margin-bottom: 62px;
+    }
+  }
+
+  .skills {
+    &-wrapper {
+      max-width: 760px;
+    }
+
+    &-title::after {
+      width: 658px;
+    }
+
+    &__list {
+      padding-right: 240px;
+    }
+  }
+
+  .biography {
+    &__inner {
+      padding-right: 88px;
+    }
+
+    &__desc {
+      letter-spacing: 0.68px;
+
+      &:last-of-type {
+        margin-bottom: 23px;
+      }
+    }
+  }
+}
