@@ -6,17 +6,9 @@
     letter-spacing: 1px;
     margin-bottom: 22px;
   }
-
-  &-photo {
-
-  }
 }
 
 .skills {
-  &-wrapper {
-    padding-top: 16px;
-  }
-
   &-title {
     @include font($main-font, 16px, 800, $secondary-text-color, 29px);
     letter-spacing: 0.8px;
@@ -42,10 +34,6 @@
     &:not(:last-child) {
       margin-bottom: 15px;
     }
-
-    &:first-child {
-      padding-right: 30px;
-    }
   }
 }
 
@@ -62,15 +50,11 @@
 }
 
 .biography {
-  &__inner {
-    padding-left: 15px;
-
-    &::before {
-      content: '';
-      @include space(25px, 2px, block);
-      background-color: $decore-color;
-      margin-bottom: 14px;
-    }
+  &__inner::before {
+    content: '';
+    @include space(25px, 2px, block);
+    background-color: $decore-color;
+    margin-bottom: 14px;
   }
 
   &__desc {
@@ -93,4 +77,94 @@
     text-transform: none;
     text-decoration: underline;
   }
+}
+
+@media (max-width: 767px) {
+  .skills {
+    &-wrapper {
+      padding-top: 16px;
+    }
+
+    &__item {
+      &:first-child {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  .biography {
+    &__inner {
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .teacher {
+    padding: 42px 0 32px;
+
+    &-title {
+      font-size: 26px;
+      line-height: 63px;
+      letter-spacing: 1.3px;
+      margin-bottom: 8px;
+    }
+
+    &-box {
+      @include flex(space-between);
+    }
+
+    &-photo {
+      padding-top: 7px;
+    }
+  }
+
+  .skills {
+    &-wrapper {
+      max-width: 398px;
+    }
+
+    &-title {
+      font-size: 20px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+
+      &::after {
+        margin-top: 9px;
+      }
+    }
+
+    &__item {
+      padding: 0 22px 0 34px;
+      hyphens: auto;
+
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+  }
+
+  .biography {
+    &__inner::before {
+      margin-bottom: 13px;
+    }
+
+    &__desc {
+      letter-spacing: 0.58px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 17px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1680px) {
 }
