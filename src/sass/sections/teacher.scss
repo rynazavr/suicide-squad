@@ -134,8 +134,12 @@
       }
     }
 
+    &__list {
+      padding-right: 22px;
+    }
+
     &__item {
-      padding: 0 22px 0 34px;
+      padding-left: 34px;
       hyphens: auto;
 
       &:not(:last-child) {
@@ -169,7 +173,6 @@
 
     &-title {
       font-size: 42px;
-      line-height: 63px;
       letter-spacing: 2.1px;
       margin-bottom: 41px;
     }
@@ -196,7 +199,7 @@
     }
 
     &__list {
-      padding-left: 5px;
+      padding: 0 112px 0 5px;
       margin-bottom: 26px;
     }
 
@@ -204,7 +207,7 @@
       font-size: 17px;
       line-height: 29px;
       letter-spacing: 0.65px;
-      padding: 0 112px 0 44px;
+      padding-left: 44px;
 
       &:not(:last-child) {
         margin-bottom: 15px;
@@ -233,11 +236,47 @@
 
     &__link {
       font-size: 17px;
-      line-height: 29px;
-      letter-spacing: 0.35px;
     }
   }
 }
 
 @media (min-width: 1680px) {
+  .teacher {
+    padding: 107px 0 118px;
+
+    &-title {
+      font-size: 46px;
+      margin-bottom: 62px;
+    }
+  }
+
+  .skills {
+    &-wrapper {
+      max-width: 760px;
+    }
+
+    &-title {
+      &::after {
+        width: 658px;
+      }
+    }
+
+    &__list {
+      padding-right: 240px;
+    }
+  }
+
+  .biography {
+    &__inner {
+      padding-right: 88px;
+    }
+
+    &__desc {
+      letter-spacing: 0.68px;
+
+      &:last-of-type {
+        margin-bottom: 23px;
+      }
+    }
+  }
 }
