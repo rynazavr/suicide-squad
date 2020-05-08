@@ -1,31 +1,33 @@
 <header class="header">
     <div class="header__hover" id="menu">
-        <div class="hover_head">
-            <div class="header__hover__logo">
-                <a class="header__hover__logo--name">
+        <div class="container">
+            <div class="hover_head">
+                <div class="header__hover__logo">
+                    <a class="header__hover__logo--name">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./images/hover_logo.png">
+                            <img src="./images/hover_logo.png" alt="hellen">
+                        </picture>
+                    </a>
+                </div>
+                <button class="btn-close" id="close">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="./images/hover_logo.png">
-                        <img src="./images/hover_logo_sm.png" alt="hellen">
+                        <source media="(min-width: 768px)" srcset="./images/hover_close.png">
+                        <img src="./images/hover_close_sm.png" alt="hellen">
                     </picture>
-                </a>
+                </button>
             </div>
-            <button class="btn-close" id="close">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="./images/hover_close.png">
-                    <img src="./images/hover_close_sm.png" alt="hellen">
-                </picture>
-            </button>
-        </div>
-        <div class="header__hover__block">
-            <nav class="header__hover--nav">
-                <a href="#" class="header__hover--info">Программа обучения</a>
-                <a href="#" class="header__hover--info">о нас</a>
-                <a href="#" class="header__hover--info">варианты обучения</a>
-                <a href="#" class="header__hover--info">контакты</a>
-            </nav>
-        </div>
-        <div class="header__hover__imput">
-            <button class="btn btn-main" form="call-form">консультация по телефону</button>
+            <div class="header__hover__block container">
+                <nav class="header__hover--nav">
+                    <a href="#" class="header__hover--info">Программа обучения</a>
+                    <a href="#" class="header__hover--info">О нас</a>
+                    <a href="#" class="header__hover--info">Варианты обучения</a>
+                    <a href="#" class="header__hover--info">Контакты</a>
+                </nav>
+            </div>
+            <div class="header__hover__imput">
+                <button class="btn btn-main" form="call-form">консультация по телефону</button>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -33,22 +35,18 @@
             <div class="header__logo">
                 <a class="header__logo"><img src="./images/footer-logo.png" height="20" width="120" alt=""></a></a>
             </div>
-
             <div class="header__mobile">
                 <div class="header__burger">
                     <button class="open" id="btn"><img src="./images/Hamburger_icon.png" height="30" width="30">
                     </button>
                 </div>
             </div>
-
             <div class="header__tablet">
                 <button class="header__btn--tell" form="call-form">консультация по телефону</button>
-
                 <div class="header__burger">
                     <button class="open" id="btn_t"><img src="./images/Hamburger_icon.png" height="30" width="30">
                     </button>
                 </div>
-
             </div>
             <section class="display">
                 <div class="header__desktop">
@@ -59,7 +57,6 @@
                         <a href="#" class="header__nav--info nav--block">контакты</a>
                     </nav>
                     <button class="header__btn--tell" form="call-form">консультация по телефону</button>
-
                 </div>
         </div>
         <div class="header__block">
@@ -79,7 +76,7 @@
                 </button>
             </div>
             <div class="header__block--right">
-                <img src="./images/main_elips.png" alt="foo" class="header__img--foto">
+                <img src="../images/main_elips.png" alt="foo" class="header__img--foto">
             </div>
         </div>
         <ul class="header__info">
@@ -102,8 +99,6 @@
                 <p class="header__info--txt">Финансовая гарантия результата</p>
             </li>
         </ul>
-
-
     </div>
     </section>
 </header>

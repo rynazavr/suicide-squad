@@ -1,24 +1,18 @@
 .header {
   background-image: url("../images/shape.png");
-  background-position: top left;
+  background-position: top;
   background-repeat: no-repeat;
   position: relative;
-   
   &__top{
     display: flex;
     justify-content: space-between;
    padding-bottom: 50px;
    padding-top: 30px;
   }
-
-
   &__logo {
     width: 160px;
     height: 49px;
-    
     }
-         
-    
     &__list-item-btn {
       background-color: #000000;
       width: 30px;
@@ -26,17 +20,14 @@
       display: block;
       margin-bottom: 4px;
     }
-
     &__burger {
-      padding-top: 15px;
+      padding-top: 6px;
     }
-  
     &__burder-menu {
       border: none;
       background-color: white;
       cursor: pointer;
     }
-
     &__btn {
       display: inline-block;
       margin-bottom: 20px;
@@ -53,35 +44,29 @@
          font-family: $secondary-font;
          background-color: transparent;
       }
-
       &--tell:hover{
         background-color: $decore-color;
         color: $reverse-text-color ;
       }
     }
-  
     &__svg {
       fill: $decore-color;
       width: 31px;
       height: 31px;
-    
       &--info {
         fill: $decore-color;
         border: 2px solid $decore-color;
         width: 60px;
         height: 60px;
         padding: 5px 5px 5px 5px;
-       
       }
     }
-
     &__info--txt {
       padding-left: 10px;
       width: 140px;
       display: inline-block;
       padding-bottom: 10px;
     }
-  
     &__nav {
       &--info {
         font-size: 12px;
@@ -90,14 +75,11 @@
         font-weight: bold;
         text-transform: uppercase;
       }
-
       &--info:hover {
       color: $decore-text-color;
       }
     }
-  
     &__title {
-      
       margin-bottom: 40px;
       &--name {
         font-size: 20px;
@@ -107,41 +89,29 @@
         line-height: 1.208;
         padding-bottom: 40px;
       }
-  
       &__txt {
         font-size: 18px;
         font-family: $main-font;
         line-height: 1.463;
-       
-  
         &--grey {
           color: $desc-text-color;
         }
-  
         &--black {
           display: block;
           color: $main-text-color;
-       
         }
-  
         &--orange {
           color: $decore-text-color;
-          
-         
         }
       }
     }
-  
     &__img {
-     
       &--foto {
         padding-bottom: 90px;
       }
     }
-  
     &__info {
       padding-bottom: 25px;
-
       &--block {
         display: flex;
         width: 250px;
@@ -155,136 +125,89 @@
         margin-bottom: 25px;
       }
     }
-  
   }
-
-
-
-
 .header__hover {
+  margin: 0 auto;
   display: none;
   position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.9);
-    
-    &__logo {
-            display: flex;
-            width: 160px;
-            height: 49px;
-            padding-bottom: 50px;
-            &--name {
-              display: block;
-              font-size: 25px;
-              font-family: $main-font;
-              color: white;
-              font-weight: bold;
-            }
-          &__svg{
-            height: 30px;
-            width: 30px;
-            transform: translateY(8px);
-            fill: $decore-color;
-            }  
-            
-          &--txt {
-                display: block;
-                font-size: 8.75px;
-                font-family: $main-font;
-                color: white;
-                font-weight: bold;
-                text-transform: uppercase;
-              }
-        
+    .header__hover__block {
+      display: block;
+      justify-content: start;
     }
-    
-    .hover_head {
-      display: flex;
-      justify-content: space-around;
-      padding: 40px 10px;
-    }
-
     &--info {
         font-size: 22px;
         font-family: $secondary-font;
         color: white;
         font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        padding-bottom: 15px;
-
+        padding-bottom: 30px;
+        text-transform: none;
     }
-
          &--info:hover {
             color: $decore-text-color;
         }
 }    
-
-
+.hover_head {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0 30px;
+}
 .btn-close, .open {
   background-color: transparent;
   border: none;
 }
- 
 .opened {
   display: block;
-  
 }
-
 @media (max-width: 767px) {
   .container {
     width: 280px;
   }
-  
   .header__mobile {
     display: flex;
     justify-content: space-between;
   }
-
   .header__tablet {
     display: none;
   }
-
   .header__desktop {
     display: none;
-
   }
-  
-  
+  .hover_head{
+    padding-top: 33px;
+  }
+  .btn-close {
+    padding-right: 50px;
+  }
 }
 @media (min-width: 768px) {
   .container {
     width: 688px;
   }
-  
   .header__mobile {
     display: none;
   }
-
   .header__tablet {
     display: flex;
     justify-content: space-between;
     width: 50%;
   }
-
   .header__desktop {
     display: none;
   }
-
   .header__block {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
   }
-
   .header__block--left {
     width: 290px;
   }
-
   .header__block--right{
    width: 360px;
   }
-  
   .header_title--name {
     font-size: 28px;
     line-height: 1.269;
@@ -295,97 +218,84 @@
     height: 360px;
     padding-bottom: 50px;
   }
-
   .header__info {
     display: flex;
     justify-content: space-around;
     padding-bottom: 50px;
   }
-
-  
+  .btn-close {
+    padding-right: 95px;
+  }
+  .header__hover--nav {
+  }
+  .header__hover--info {
+    font-size: 32px;
+    text-align: center;
+  }
 }
-
 @media (min-width: 1280px) {
   .container {
     width: 1210px;
   }
-
   .header__mobile {
     display: none;
   }
-
   .header__tablet {
     display: none;
   }
-
   .header__desktop {
     display: flex;
     justify-content: space-between;
-   
   }
-
   .header__nav {
     padding-top: 20px;
    display: flex;
    justify-content: space-around;
-   
   }
-
   .header__nav--info {
     text-align: center;
     width: 190px;
    }
-
    .nav--block {
      width: 100px;
    }
-
   .header_btn--tell {
     width: 300px;
   }
-
   .header__title--name {
+    padding-top: 50px;
     font-size: 48px;
     line-height: 1.269;
     text-align: left;
   }
-
   .header__img--foto{
-    width: 605px;
-    height: 605px;
+    width: 800px;
+    height: 650px;
     padding-bottom: 50px;
   }
-
   .header__block--left {
-    width: 520px;
+    width: 500px;
   }
-
   .header__block--right{
-   width: 600px;
+   width: 700px;
   }
-  
 .header__info--txt{
   font-size: 16px;
   width: 370px;
   padding-top: 15px;
   transform: translatex(-1px);
   background-image: url("../image/white.jpg") width="20px" height="20px";
- 
 }
-
 .header__svg--info{
   width: 200px;
   height: 100px;
   padding-right: 20px;
   padding-top: 20px;
   padding-left: 20px;
-  
 }
 }
-
 @media (min-width: 1600px) {
   .container {
     width: 1340px;
   }
-
 }
